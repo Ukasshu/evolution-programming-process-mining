@@ -1,0 +1,18 @@
+<BPMNInstance> ::= BpmnModelInstance modelInstance = Bpmn.createProcess().startEvent()<processNoEnd><parallel><process>.done();
+
+<task> ::= Task1|Task2|Task3|Task4
+
+<num> ::= GE_RANGE:4
+
+<process> ::= .userTask().name('"Task'<num>'"')<process>|.endEvent()
+
+
+<processNoEnd> ::= .userTask().name('"'<task>'"')<processNoEnd>|.userTask().name('"'<task>'"')
+
+<parallel> ::= .parallelGateway('"'startPar'"')<process>.parallelGateway('"'endPar'"')
+
+
+
+
+
+
