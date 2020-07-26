@@ -11,25 +11,22 @@ class bpmn_fitness(base_ff):
     Penalty given to individual string components which do not match ASCII
     value of target."""
 
-    maximise = True
-
-    tasks_number = 5
-     
+    maximise = True     
 
     def __init__(self):
         # Initialise base fitness function class.
         super().__init__()
         
-        # Set target string.
         self.target = params['TARGET']
-        self.compiler = Compiler("{::}")
         self.reader = XESReader(params['TRACES_XES_FILE'])
         self.reader.read_xes()
+        self.compiler = Compiler(" ", self.reader)
+        
 
     def evaluate(self, ind, **kwargs):
         phenotype = ind.phenotype
 
-        tokens = phenotype.split("{::}")
+        tokens = phenotype.split(" ")
 
         return self.compiles(phenotype) * self.all_tasks_included(tokens) * self.are_gotos_correct(tokens)
 
@@ -37,14 +34,17 @@ class bpmn_fitness(base_ff):
     def all_tasks_included(self, tokens):
         task_tokens = list(filter(lambda tk: tk.startswith("task("), tokens))
         unique_task_tokens = list(set(task_tokens))
-        return len(unique_task_tokens) * int(len(task_tokens) == len(unique_task_tokens))  * int(len(unique_task_tokens) <= self.tasks_number)
+
+        task_numbers_ok = all(map(lambda tk: int(re.search(r"task\(([0-9]+)\)", tk).group(1)) < self.reader.number_of_tasks, unique_task_tokens))
+
+        return len(unique_task_tokens) * int(len(task_tokens) == len(unique_task_tokens))  * int(len(unique_task_tokens) <= self.reader.number_of_tasks) * int(task_numbers_ok)
 
     def are_gotos_correct(self, tokens):
         task_gotos = list(filter(lambda tk: tk.startswith("goto(task"), tokens))
         gat_gotos = list(filter(lambda tk: tk.startswith("goto(gat"), tokens))
         gat_tokens = list(filter(lambda tk: tk in ["par", "ex", "exsplit", "loop"], tokens))
 
-        task_gotos_correctness = list(map(lambda tk: int(re.search(r"\(task([0-9]+)\)", tk).group(1)) < self.tasks_number and tk not in self.compiler.par_tasks, task_gotos))
+        task_gotos_correctness = list(map(lambda tk: int(re.search(r"\(task([0-9]+)\)", tk).group(1)) < self.reader.number_of_tasks and tk not in self.compiler.par_tasks, task_gotos))
         gat_gotos_correctness = list(map(lambda tk: int(re.search(r"\(gat([0-9]+)\)", tk).group(1)) < len(gat_tokens), gat_gotos))
 
         wrong_gotos = len(task_gotos_correctness) - sum(task_gotos_correctness) + len(gat_gotos_correctness) - sum(gat_gotos_correctness)

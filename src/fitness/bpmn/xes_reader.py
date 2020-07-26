@@ -6,6 +6,7 @@ class XESReader:
         self.filename = filename
         self.tasks = []
         self.traces = {}
+        self.number_of_tasks = 0
 
     @staticmethod
     def get_one_event_dict(one_event, case_name,data_types):
@@ -92,5 +93,6 @@ class XESReader:
 
         self.traces = traces
         self.tasks = tasks
+        self.number_of_tasks = len(tasks)
 
 

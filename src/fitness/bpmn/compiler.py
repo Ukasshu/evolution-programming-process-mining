@@ -1,39 +1,54 @@
 import re
 
 class Compiler:
-    def __init__(self, delimiter):
+    def __init__(self, delimiter, xes_reader):
         self.delimiter = delimiter
         self.par_tasks = []
+        self.program = []
+        self.graph = {}
+        self.xes_reader = xes_reader
 
     def compile(self, string_to_compile):
         self.par_tasks = []
+        self.program = [] 
+                
         tokens = string_to_compile.split(self.delimiter)
 
-        program = []
+        gateway_count = 0 # OK
+        gateway_stack = [] # OK
 
-        gateway_count = 0
-        gateway_stack = []
+        last_element = None # OK
 
-        last_element = None
+        additional_connections = [] # OK
 
-        additional_connections = []
-
-        started = False
-        ended = False
+        started = False # OK
+        ended = False # OK
 
         for token in tokens:
             if token == "start" and not started:
                 #start
                 started = True
-                program.append(".startEvent(\"start\")")
+                self.program.append(".startEvent(\"start\")")
+                self.graph["start"] = {
+                    "next": [],
+                    "type": "start",
+                    "name": "start"
+                }
                 last_element = "start"
                 ###
             elif token.startswith("task("):
                 #task
                 match = re.search(r"\(([0-9]+)\)", token)
                 task_num = match.group(1)
-                program.append(".userTask(\"task" + task_num + "\")")
-                last_element = "task" + task_num
+                task_id = "task" + task_num
+                self.program.append(".userTask(\"" + task_id + "\").name(\"" + self.xes_reader.tasks[int(task_num)] + "\")")
+                self.graph[last_element]["next"].append(task_id)
+                self.graph[task_id] = {
+                    "next": [],
+                    "type": "task",
+                    "name": task_id
+                }
+                last_element = task_id
 
                 if any(list(map(lambda gat: gat["name"].startswith("par"), gateway_stack))):
                     self.par_tasks.append("task" + task_num)
@@ -41,46 +56,58 @@ class Compiler:
             elif token == "loop":
                 #loop
                 curr_gat = {
+                    "next": [],
                     "name": "gat" + str(gateway_count),
-                    "type": "loop",
+                    "type": "loop"
                 }
                 gateway_stack.append(curr_gat)
-                program.append(".exclusiveGateway(\"" + curr_gat["name"] + "\")")
+                self.program.append(".exclusiveGateway(\"" + curr_gat["name"] + "\")")
+                self.graph[last_element]["next"].append(curr_gat["name"])
+                self.graph[curr_gat["name"]] = curr_gat
                 last_element = curr_gat["name"]
                 gateway_count += 1
                 ###
             elif token == "par":
                 #par
                 curr_gat = {
+                    "next": [],
                     "name": "gat" + str(gateway_count),
                     "type": "par",
                     "end": False
                 }
                 gateway_stack.append(curr_gat)
-                program.append(".parallelGateway(\"" + curr_gat["name"] + "\")")
+                self.program.append(".parallelGateway(\"" + curr_gat["name"] + "\")")
+                self.graph[last_element]["next"].append(curr_gat["name"])
+                self.graph[curr_gat["name"]] = curr_gat
                 last_element = curr_gat["name"]
                 gateway_count += 1
                 ###
             elif token == "ex":
                 #ex
                 curr_gat = {
+                    "next": [],
                     "name": "gat" + str(gateway_count),
                     "type": "ex",
                     "end": False
                 }
                 gateway_stack.append(curr_gat)
-                program.append(".exclusiveGateway(\"" + curr_gat["name"] + "\")")
+                self.program.append(".exclusiveGateway(\"" + curr_gat["name"] + "\")")
+                self.graph[last_element]["next"].append(curr_gat["name"])
+                self.graph[curr_gat["name"]] = curr_gat
                 last_element = curr_gat["name"]
                 gateway_count += 1
                 ###
             elif token == "exsplit":
                 #exsplit
                 curr_gat = {
+                    "next": [],
                     "name": "gat" + str(gateway_count),
                     "type": "split"
                 }
                 gateway_stack.append(curr_gat)
-                program.append(".exclusiveGateway(\"" + curr_gat["name"] +"\")")
+                self.program.append(".exclusiveGateway(\"" + curr_gat["name"] +"\")")
+                self.graph[last_element]["next"].append(curr_gat["name"])
+                self.graph[curr_gat["name"]] = curr_gat
                 last_element = curr_gat["name"]
                 gateway_count += 1
                 ###
@@ -88,21 +115,33 @@ class Compiler:
                 #next
                 last_gateway = gateway_stack[-1]
                 if last_gateway["type"] == "split":
-                    program.append(".moveToNode(\"" + last_gateway["name"] +"\")")
+                    self.program.append(".moveToNode(\"" + last_gateway["name"] +"\")")
                 elif last_gateway["type"] == "ex":
                     if not last_gateway["end"]:
-                        program.append(".exclusiveGateway(\"e" + last_gateway["name"] + "\")")
+                        self.program.append(".exclusiveGateway(\"e" + last_gateway["name"] + "\")")
+                        self.graph["e" + last_gateway["name"]] = {
+                            "next": [],
+                            "name": "e" + last_gateway["name"],
+                            "type": "e" + last_gateway["type"]
+                        }
                         last_gateway["end"] = True
                     else:
-                        program.append(".connectTo(\"e" + last_gateway["name"] + "\")")
-                    program.append(".moveToNode(\"" + last_gateway["name"] +"\")")
+                        self.program.append(".connectTo(\"e" + last_gateway["name"] + "\")")
+                    self.graph[last_element]["next"].append("e" + last_gateway["name"])
+                    self.program.append(".moveToNode(\"" + last_gateway["name"] +"\")")
                 elif last_gateway["type"] == "par":
                     if not last_gateway["end"]:
-                        program.append(".parallelGateway(\"e" + last_gateway["name"] + "\")")
+                        self.program.append(".parallelGateway(\"e" + last_gateway["name"] + "\")")
+                        self.graph["e" + last_gateway["name"]] = {
+                            "next": [],
+                            "name": "e" + last_gateway["name"],
+                            "type": "e" + last_gateway["type"]
+                        }
                         last_gateway["end"] = True
                     else:
-                        program.append(".connectTo(\"e" + last_gateway["name"] + "\")")
-                    program.append(".moveToNode(\"" + last_gateway["name"] +"\")")
+                        self.program.append(".connectTo(\"e" + last_gateway["name"] + "\")")
+                    self.graph[last_element]["next"].append("e" + last_gateway["name"])
+                    self.program.append(".moveToNode(\"" + last_gateway["name"] +"\")")
                 else:
                     raise Exception("Wrong token found")
                 last_element = last_gateway["name"]
@@ -111,8 +150,9 @@ class Compiler:
                 #back
                 last_gateway = gateway_stack[-1]
                 if last_gateway["type"] == "loop":
-                    program.append(".connectTo(\"" + last_gateway["name"] +"\")")
-                    program.append(".moveToNode(\"" + last_gateway["name"] + "\")")
+                    self.program.append(".connectTo(\"" + last_gateway["name"] +"\")")
+                    self.program.append(".moveToNode(\"" + last_gateway["name"] + "\")")
+                    self.graph[last_element]["next"].append(last_gateway["name"])
                     gateway_stack.pop()
                     last_element = last_gateway["name"]
                 elif last_gateway["type"] == "split":
@@ -122,9 +162,11 @@ class Compiler:
                     else:
                         last_element = None
                 elif last_gateway["type"] in ["ex", "par"]:
-                    program.append(".connectTo(\"e" + last_gateway["name"] +"\")")
-                    program.append(".moveToNode(\"e" + last_gateway["name"] + "\")")
+                    self.program.append(".connectTo(\"e" + last_gateway["name"] +"\")")
+                    self.program.append(".moveToNode(\"e" + last_gateway["name"] + "\")")
+                    self.graph[last_element]["next"] = "e" + last_gateway["name"]
                     gateway_stack.pop()
+                    last_element = "e" + last_gateway["name"]
                 ###
             elif token.startswith("goto("):
                 #goto
@@ -134,24 +176,31 @@ class Compiler:
                     "from": last_element,
                     "to": node_name
                 })
+                self.graph[last_element]["next"].append(node_name)
                 ###
             elif token == "end":
                 if not ended:
-                    program.append(".endEvent(\"end\")")
+                    self.program.append(".endEvent(\"end\")")
                     ended = True
+                    self.graph["end"] = {
+                        "next": None,
+                        "name": "end",
+                        "type": "end"
+                    }
                 else:
                     additional_connections.append({
                         "from": last_element,
                         "to": "end"
                     })
+                self.graph[last_element]["next"].append("end")
             else:
                 raise Exception("Unknown token")
 
         for conn in additional_connections:
-            program.append(".moveToNode(\"" + conn["from"] + "\")")
-            program.append(".connectTo(\"" + conn["to"] + "\")")
+            self.program.append(".moveToNode(\"" + conn["from"] + "\")")
+            self.program.append(".connectTo(\"" + conn["to"] + "\")")
 
-        program.append(".done();}}")
+        self.program.append(".done();}}")
 
-        return program
+        return self.program
             
