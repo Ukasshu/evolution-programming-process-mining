@@ -82,6 +82,8 @@ class XESReader:
             set_of_tasks.add(event["concept:name"])
 
         return traces, list(set_of_tasks)
+
+    
             
 
     def read_xes(self):
@@ -90,6 +92,8 @@ class XESReader:
         inter = XESReader.gain_log_info_table(xml_string)
 
         traces, tasks = XESReader.dict_to_list_of_traces(inter)
+
+        self.simple_traces = list(map(lambda trace_keys: list(map(lambda task: "task" + str(tasks.index(task["concept:name"])), traces[trace_keys])), traces.keys()))
 
         self.traces = traces
         self.tasks = tasks

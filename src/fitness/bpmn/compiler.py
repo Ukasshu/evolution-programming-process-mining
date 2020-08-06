@@ -1,4 +1,7 @@
 import re
+import copy
+import json
+import traceback
 
 class Compiler:
     def __init__(self, delimiter, xes_reader):
@@ -111,6 +114,32 @@ class Compiler:
                 last_element = curr_gat["name"]
                 gateway_count += 1
                 ###
+            elif token == "do":
+                #do
+                curr_gat = {
+                    "next": [],
+                    "name": "gat" + str(gateway_count),
+                    "type": "do_repeat"
+                }
+                gateway_stack.append(curr_gat)
+                self.program.append(".exclusiveGateway(\"" + curr_gat["name"] + "\")")
+                self.graph[last_element]["next"].append(curr_gat["name"])
+                self.graph[curr_gat["name"]] = curr_gat
+                last_element = curr_gat["name"]
+                gateway_count += 1
+                ###
+            elif token == "repeat_after":
+                #repeat
+                last_gateway = gateway_stack[-1]
+                self.program.append(".exclusiveGateway(\"e" + last_gateway["name"] + "\")")
+                self.graph[last_element]["next"].append("e" + last_gateway["name"])
+                self.graph["e" + last_gateway["name"]] = {
+                    "next": [],
+                    "name": "e" + last_gateway["name"],
+                    "type": "e" + last_gateway["type"]
+                }
+                last_element = "e" + last_gateway["name"]
+                ###                
             elif token == "next":
                 #next
                 last_gateway = gateway_stack[-1]
@@ -164,9 +193,15 @@ class Compiler:
                 elif last_gateway["type"] in ["ex", "par"]:
                     self.program.append(".connectTo(\"e" + last_gateway["name"] +"\")")
                     self.program.append(".moveToNode(\"e" + last_gateway["name"] + "\")")
-                    self.graph[last_element]["next"] = "e" + last_gateway["name"]
+                    self.graph[last_element]["next"].append("e" + last_gateway["name"])
                     gateway_stack.pop()
                     last_element = "e" + last_gateway["name"]
+                elif last_gateway["type"] == "do_repeat":
+                    self.program.append(".connectTo(\"" + last_gateway["name"] + "\")")
+                    self.program.append(".moveToNode(\"e" + last_gateway["name"] + "\")")
+                    self.graph[last_element]["next"].append(last_gateway["name"])
+                    gateway_stack.pop()
+                    last_gateway = "e" + last_gateway["name"]
                 ###
             elif token.startswith("goto("):
                 #goto
@@ -183,7 +218,7 @@ class Compiler:
                     self.program.append(".endEvent(\"end\")")
                     ended = True
                     self.graph["end"] = {
-                        "next": None,
+                        "next": [],
                         "name": "end",
                         "type": "end"
                     }
@@ -202,5 +237,49 @@ class Compiler:
 
         self.program.append(".done();}}")
 
+        self.simplify_graph()
+
         return self.program
+
+    def simplify_graph(self):
+        try:
+            self.simple_graph = copy.deepcopy(self.graph)
+
+            ex_gat_ids = list(filter(lambda key: self.simple_graph[key]["type"] in ["ex", "eex", "loop", "do_repeat", "edo_repeat", "split"], self.simple_graph.keys()))
+
+            for gat_id in ex_gat_ids:
+                if gat_id in self.simple_graph[gat_id]["next"]:
+                    self.simple_graph[gat_id]["next"].remove(gat_id)
+            
+                for el in list(self.simple_graph.keys()): 
+                    if gat_id in self.simple_graph[el]["next"]:
+                        self.simple_graph[el]["next"].remove(gat_id)
+                        self.simple_graph[el]["next"].extend(self.simple_graph[gat_id]["next"])
+                
+                self.simple_graph.pop(gat_id)    
+            
+                
+            par_gat_ids = list(filter(lambda key: self.simple_graph[key]["type"] == "par", self.simple_graph.keys()))
+
+            par_gat_ids.sort(key=(lambda s: int(s[3:])), reverse=True)
+
+            for par_id in par_gat_ids:
+                for el in list(self.simple_graph.keys()):
+                    if par_id in self.simple_graph[el]["next"]:
+                        # print(el + " : " + par_id)
+                        # print(str(self.simple_graph[el]["next"]))
+                        self.simple_graph[el]["next"].remove(par_id)
+                        self.simple_graph[el]["next"].append(tuple(self.simple_graph[par_id]["next"]))
+
+                self.simple_graph.pop(par_id)
+        except:
+            traceback.print_exc()
+            print(str(self.simple_graph))
+
+
+
+
+
+        
+
             

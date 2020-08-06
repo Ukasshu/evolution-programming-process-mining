@@ -2,6 +2,7 @@ from algorithm.parameters import params
 from fitness.base_ff_classes.base_ff import base_ff
 from fitness.bpmn.compiler import Compiler
 from fitness.bpmn.xes_reader import XESReader
+from unittest.mock import ANY
 import re
 import subprocess
 
@@ -24,6 +25,8 @@ class bpmn_fitness(base_ff):
         
 
     def evaluate(self, ind, **kwargs):
+        self.visited_edges = []
+        
         phenotype = ind.phenotype
 
         tokens = phenotype.split(" ")
@@ -54,18 +57,76 @@ class bpmn_fitness(base_ff):
         else:
             return 1
 
+    """ FITNESS """
+    def fitness(self):
+        self.visited_edges = set()
+        counter = 0
+
+        graph = self.compiler.graph
+        traces = self.reader.simple_traces
+        
+        for trace in traces:
+            next_elements = [[("start", graph["start"]["next"])]]
+            self.visited_edges
+            fail = False
+            i = 0
+
+            task_to_reach = [trace[0]]
+            task_searched = [False] * len(trace)
+
+            while not fail and i < len(trace):
+                
+
+                if any((ANY, trace[i]) in element for element in next_elements):
+                    next_elements = [element for i in range(2)]
+                    next_elements = next_elements + list(map(lambda tk: (trace[i], tk) ,graph[trace[i]]["next"]))
+                    self.visited_edges.add(map(lambda n: (), graph[trace[i]]["next"]))
+                    i += 1
+                    task_to_reach = [trace[i]]
+                    noop = False
+                    # continue
+                # if gats:
+
+                # if noop:
+                    
+    def find_way_to_task(self, start_points, next_task):
+        paths = start_points
+        graph = self.compiler.graph
+        while not paths:
+            next_paths = list(map(lambda path: list(map(lambda n: path + (n,), graph[path[-1]]["next"])) , [p for p in paths if p[-1] != next_task]))
+            next_paths = [branch for path in next_paths for branch in path] + [p for p in paths if p[-1] == next_task]
+            if all([path[-1] == next_task for path in next_paths]):
+                return next_paths
+            paths = [path for path in next_paths if bpmn_fitness.path_valid(path, next_task)]
+        return []
+
+    @staticmethod
+    def path_valid(path, task):
+        return len(set(path)) == len(path) and not (path[-1].startswith("task") and path[-1] != task)
+            
+
+
+
+
+
+
+
+
 
 
     def compiles(self, phenotype):
         # status = 0
         try:
-            program = "".join(self.compiler.compile(phenotype))
+            self.compiler.compile(phenotype)
 
-            template = open("../../bpmn-model/src/main/java/pl/edu/agh/kis/BPMNModel_template").read()
+            """ TO GDZIEŚ KIEDYŚ NA KOŃCU """
+            # program = "".join(self.compiler.compile(phenotype))
 
-            f = open("../../bpmn-model/src/main/java/pl/edu/agh/kis/BPMNModel.java", "w")
-            f.write(template + program)
-            f.close()
+            # template = open("../../bpmn-model/src/main/java/pl/edu/agh/kis/BPMNModel_template").read()
+
+            # f = open("../../bpmn-model/src/main/java/pl/edu/agh/kis/BPMNModel.java", "w")
+            # f.write(template + program)
+            # f.close()
 
             # status = subprocess.call('java -cp src/main/resources/* src/main/java/pl/edu/agh/kis/BPMNModel.java', cwd='../../bpmn-model', shell=False)
             # if status != 0:

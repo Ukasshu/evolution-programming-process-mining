@@ -9,6 +9,7 @@
                   <exclusive> <endableFlow>|
                   exsplit <endableFlow> <nextBranchEndable>|
                   <loop> <endableFlow>|
+                  do <flow> repeat_after <flow> back <endableFlow>|
                   end
 
 <flow> ::= task(<numOfTasks>) <flow>|
@@ -18,7 +19,10 @@
            <loop> <flow>|
            <loop>|
            <exclusive> <flow>|
-           <exclusive>
+           <exclusive>|
+           do <flow> repeat_after <flow> back|
+           do <flow> repeat_after <flow> back <flow>
+           
 
 <parallel> ::= par <flow> <nextBranch>
 
@@ -37,10 +41,11 @@
 <identifier> ::= task<numOfTasks>|
                  gat<numOfGateways>
 
-<endableGotoFlow> ::= task(<numOfTasks>) <endableFlow>|
-                      <parallel> <endableFlow>|
-                      <exclusive> <endableFlow>|
-                      exsplit <endableFlow> <nextBranchEndable>|
-                      <loop> <endableFlow>|
+<endableGotoFlow> ::= task(<numOfTasks>) <endableGotoFlow>|
+                      <parallel> <endableGotoFlow>|
+                      <exclusive> <endableGotoFlow>|
+                      exsplit <endableGotoFlow> <nextBranchEndable>|
+                      <loop> <endableGotoFlow>|
+                      do <flow> repeat_after <flow> back <endableGotoFlow>|
                       end|
                       goto(<identifier>)
