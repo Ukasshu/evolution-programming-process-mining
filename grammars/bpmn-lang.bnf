@@ -4,48 +4,44 @@
 
 <numOfGateways> ::= GE_RANGE:20
 
-<endableFlow> ::= task(<numOfTasks>) <endableFlow>|
-                  <parallel> <endableFlow>|
-                  <exclusive> <endableFlow>|
+<endableFlow> ::= <element> <endableFlow>|
                   exsplit <endableFlow> <nextBranchEndable>|
-                  <loop> <endableFlow>|
-                  do <flow> repeat_after <flow> back <endableFlow>|
                   end
 
-<flow> ::= task(<numOfTasks>) <flow>|
-           task(<numOfTasks>)|
-           <parallel> <flow>|
-           <parallel>|
-           <loop> <flow>|
-           <loop>|
-           <exclusive> <flow>|
-           <exclusive>|
-           do <flow> repeat_after <flow> back|
-           do <flow> repeat_after <flow> back <flow>
-           
-
-<parallel> ::= par <flow> <nextBranch>
-
-<exclusive> ::= ex <flow> <nextBranch>
-
-<loop> ::= loop <flow> back
+<endableGotoFlow> ::= <element> <endableGotoFlow>|
+                      exsplit <endableGotoFlow> <nextBranchEndable>|
+                      goto(<identifier>)|
+                      end
 
 <nextBranch> ::= next <flow> <nextBranch>|
-                 next <nextBranch>|
                  next <flow> back|
                  next back
+
+<nextParBranch> ::= next <flow> <nextParBranch>|
+                    next <flow> back
 
 <nextBranchEndable> ::= next <endableGotoFlow> back|
                         next <endableGotoFlow> <nextBranchEndable>
 
+<flow> ::= <element> <flow>|
+           <element>
+
+<element> ::= <task>|
+              <parallel>|
+              <exclusive>|
+              <loop>|
+              <do_repeat>
+
+<task> ::= task(<numOfTasks>)
+
+<parallel> ::= par <flow> <nextParBranch>
+
+<exclusive> ::= ex <flow> <nextBranch>
+
+<do_repeat> ::= do <flow> repeat_after back |
+                do <flow> repeat_after <flow> back
+
+<loop> ::= loop <flow> back
+
 <identifier> ::= task<numOfTasks>|
                  gat<numOfGateways>
-
-<endableGotoFlow> ::= task(<numOfTasks>) <endableGotoFlow>|
-                      <parallel> <endableGotoFlow>|
-                      <exclusive> <endableGotoFlow>|
-                      exsplit <endableGotoFlow> <nextBranchEndable>|
-                      <loop> <endableGotoFlow>|
-                      do <flow> repeat_after <flow> back <endableGotoFlow>|
-                      end|
-                      goto(<identifier>)

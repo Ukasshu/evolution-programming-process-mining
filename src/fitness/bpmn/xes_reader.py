@@ -7,6 +7,7 @@ class XESReader:
         self.tasks = []
         self.traces = {}
         self.number_of_tasks = 0
+        self.simple_traces = []
 
     @staticmethod
     def get_one_event_dict(one_event, case_name,data_types):
@@ -83,15 +84,14 @@ class XESReader:
 
         return traces, list(set_of_tasks)
 
-    
-            
-
     def read_xes(self):
         xml_string = open(self.filename,mode='r').read()
 
         inter = XESReader.gain_log_info_table(xml_string)
 
         traces, tasks = XESReader.dict_to_list_of_traces(inter)
+
+        tasks.sort()
 
         self.simple_traces = list(map(lambda trace_keys: list(map(lambda task: "task" + str(tasks.index(task["concept:name"])), traces[trace_keys])), traces.keys()))
 

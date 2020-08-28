@@ -13,8 +13,8 @@ params = {
         'STEP': 'step',
 
         # Evolutionary Parameters
-        'POPULATION_SIZE': 500,
-        'GENERATIONS': 50,
+        'POPULATION_SIZE': 1000,
+        'GENERATIONS': 100,
         'HILL_CLIMBING_HISTORY': 1000,
         'SCHC_COUNT_METHOD': "count_all",
 
@@ -95,7 +95,7 @@ params = {
         'MUTATION': "operators.mutation.int_flip_per_codon",
         # Set mutation probability (None defaults to 1 over the length of
         # the genome for each codon)
-        'MUTATION_PROBABILITY': None,
+        'MUTATION_PROBABILITY': 0.2,
         # Set number of mutation events
         'MUTATION_EVENTS': 1,
         # Prevents mutation from generating invalids.
@@ -129,7 +129,7 @@ params = {
 
         # MULTIPROCESSING
         # Multi-core parallel processing of phenotype evaluations.
-        'MULTICORE': False,
+        'MULTICORE': True,
         # Set the number of cpus to be used for multiprocessing
         'CORES': cpu_count(),
 

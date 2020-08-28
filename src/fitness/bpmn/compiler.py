@@ -6,26 +6,31 @@ import traceback
 class Compiler:
     def __init__(self, delimiter, xes_reader):
         self.delimiter = delimiter
-        self.par_tasks = []
+        self.par_tasks = set()
+        self.loop_tasks = set()
         self.program = []
         self.graph = {}
         self.xes_reader = xes_reader
+        self.simple_graph = {}
 
     def compile(self, string_to_compile):
-        self.par_tasks = []
+        self.par_tasks = set()
+        self.loop_tasks = set()
         self.program = [] 
                 
         tokens = string_to_compile.split(self.delimiter)
 
-        gateway_count = 0 # OK
-        gateway_stack = [] # OK
+        gateway_count = 0  # OK
+        gateway_stack = []  # OK
 
-        last_element = None # OK
+        task_count = 0
 
-        additional_connections = [] # OK
+        last_element = None  # OK
 
-        started = False # OK
-        ended = False # OK
+        additional_connections = []  # OK
+
+        started = False  # OK
+        ended = False  # OK
 
         for token in tokens:
             if token == "start" and not started:
@@ -43,18 +48,24 @@ class Compiler:
                 #task
                 match = re.search(r"\(([0-9]+)\)", token)
                 task_num = match.group(1)
-                task_id = "task" + task_num
+                task_id = "task" + task_count
+                task_count += 1
                 self.program.append(".userTask(\"" + task_id + "\").name(\"" + self.xes_reader.tasks[int(task_num)] + "\")")
                 self.graph[last_element]["next"].append(task_id)
                 self.graph[task_id] = {
                     "next": [],
                     "type": "task",
-                    "name": task_id
+                    "name": task_id,
+                    "num" : task_num
                 }
+
                 last_element = task_id
 
-                if any(list(map(lambda gat: gat["name"].startswith("par"), gateway_stack))):
-                    self.par_tasks.append("task" + task_num)
+                if any([gat["type"] == "par" for gat in gateway_stack]):
+                    # if any(list(map(lambda gat: gat["type"].startswith("par"), gateway_stack))):
+                    self.par_tasks.add(task_id)
+                if any([gat["type"] in ["loop", "do_repeat"] for gat in gateway_stack]):
+                    self.loop_tasks.add(task_id)
                 ###
             elif token == "loop":
                 #loop
@@ -139,7 +150,7 @@ class Compiler:
                     "type": "e" + last_gateway["type"]
                 }
                 last_element = "e" + last_gateway["name"]
-                ###                
+                ###
             elif token == "next":
                 #next
                 last_gateway = gateway_stack[-1]
@@ -201,7 +212,7 @@ class Compiler:
                     self.program.append(".moveToNode(\"e" + last_gateway["name"] + "\")")
                     self.graph[last_element]["next"].append(last_gateway["name"])
                     gateway_stack.pop()
-                    last_gateway = "e" + last_gateway["name"]
+                    last_element = "e" + last_gateway["name"]
                 ###
             elif token.startswith("goto("):
                 #goto
@@ -237,49 +248,44 @@ class Compiler:
 
         self.program.append(".done();}}")
 
-        self.simplify_graph()
-
         return self.program
 
     def simplify_graph(self):
         try:
-            self.simple_graph = copy.deepcopy(self.graph)
+            simple_graph = copy.deepcopy(self.graph)
 
-            ex_gat_ids = list(filter(lambda key: self.simple_graph[key]["type"] in ["ex", "eex", "loop", "do_repeat", "edo_repeat", "split"], self.simple_graph.keys()))
+            # epars - count req_conn ###
+            epar_gat_ids = list(filter(lambda key: simple_graph[key]["type"] == "epar", simple_graph.keys()))
+            for epar_id in epar_gat_ids:
+                simple_graph[epar_id]["req_conn"] = len([id for id in list(simple_graph.keys()) if epar_id in simple_graph[id]['next']])
 
-            for gat_id in ex_gat_ids:
-                if gat_id in self.simple_graph[gat_id]["next"]:
-                    self.simple_graph[gat_id]["next"].remove(gat_id)
-            
-                for el in list(self.simple_graph.keys()): 
-                    if gat_id in self.simple_graph[el]["next"]:
-                        self.simple_graph[el]["next"].remove(gat_id)
-                        self.simple_graph[el]["next"].extend(self.simple_graph[gat_id]["next"])
-                
-                self.simple_graph.pop(gat_id)    
-            
-                
-            par_gat_ids = list(filter(lambda key: self.simple_graph[key]["type"] == "par", self.simple_graph.keys()))
-
-            par_gat_ids.sort(key=(lambda s: int(s[3:])), reverse=True)
-
+            # pars - ###
+            par_gat_ids = list(filter(lambda key: simple_graph[key]["type"] == "par", simple_graph.keys()))
             for par_id in par_gat_ids:
-                for el in list(self.simple_graph.keys()):
-                    if par_id in self.simple_graph[el]["next"]:
-                        # print(el + " : " + par_id)
-                        # print(str(self.simple_graph[el]["next"]))
-                        self.simple_graph[el]["next"].remove(par_id)
-                        self.simple_graph[el]["next"].append(tuple(self.simple_graph[par_id]["next"]))
+                simple_graph[par_id]["next"] = list(map(lambda el: [el], simple_graph[par_id]["next"]))
 
-                self.simple_graph.pop(par_id)
+            # exclusive gateways to multiple connections ###
+            ex_gat_ids = list(filter(lambda key: simple_graph[key]["type"] in ["ex", "eex", "loop", "do_repeat", "edo_repeat", "split"], simple_graph.keys()))
+
+            for ex_id in ex_gat_ids:
+                if ex_id in simple_graph[ex_id]["next"]:
+                    simple_graph[ex_id]["next"] = list(filter(ex_id.__ne__, simple_graph[ex_id]["next"]))
+            
+                for el in list(simple_graph.keys()):
+                    if simple_graph[el]["type"] != "par" and ex_id in simple_graph[el]["next"]:
+                        simple_graph[el]["next"] = list(filter(ex_id.__ne__, simple_graph[el]["next"]))
+                        simple_graph[el]["next"].extend(simple_graph[ex_id]["next"])
+                    elif simple_graph[el]["type"] == "par":
+                        for idx in range(len(simple_graph[el]["next"])):
+                            if ex_id in simple_graph[el]["next"][idx]:
+                                simple_graph[el]["next"][idx] = list(filter(ex_id.__ne__, simple_graph[el]["next"][idx]))
+                                simple_graph[el]["next"][idx].extend(simple_graph[ex_id]["next"])
+                
+                simple_graph.pop(ex_id)
+
+            self.simple_graph = simple_graph
+
+            return simple_graph
         except:
             traceback.print_exc()
-            print(str(self.simple_graph))
-
-
-
-
-
-        
-
-            
+            print(str(simple_graph))
