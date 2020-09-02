@@ -48,7 +48,7 @@ class Compiler:
                 #task
                 match = re.search(r"\(([0-9]+)\)", token)
                 task_num = match.group(1)
-                task_id = "task" + task_count
+                task_id = "task" + str(task_count)
                 task_count += 1
                 self.program.append(".userTask(\"" + task_id + "\").name(\"" + self.xes_reader.tasks[int(task_num)] + "\")")
                 self.graph[last_element]["next"].append(task_id)
@@ -56,7 +56,7 @@ class Compiler:
                     "next": [],
                     "type": "task",
                     "name": task_id,
-                    "num" : task_num
+                    "num" : int(task_num)
                 }
 
                 last_element = task_id

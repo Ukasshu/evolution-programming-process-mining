@@ -93,10 +93,12 @@ class XESReader:
 
         tasks.sort()
 
-        self.simple_traces = list(map(lambda trace_keys: list(map(lambda task: "task" + str(tasks.index(task["concept:name"])), traces[trace_keys])), traces.keys()))
+        self.simple_traces = list(map(lambda trace_keys: list(map(lambda task: tasks.index(task["concept:name"]), traces[trace_keys])), traces.keys()))
 
         self.traces = traces
         self.tasks = tasks
         self.number_of_tasks = len(tasks)
+
+        self.max_occurences = list(map(lambda tsk: max([tr.count(tsk) for tr in self.simple_traces]), range(self.number_of_tasks)))
 
 

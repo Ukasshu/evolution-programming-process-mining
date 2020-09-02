@@ -1,3 +1,0 @@
-<process> ::= modelInstance = Bpmn.createProcess().startEvent()<task>.endEvent().done();
-
-<task> ::= .userTask("task")

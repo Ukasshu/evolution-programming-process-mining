@@ -13,7 +13,7 @@ params = {
         'STEP': 'step',
 
         # Evolutionary Parameters
-        'POPULATION_SIZE': 1000,
+        'POPULATION_SIZE': 1500,
         'GENERATIONS': 100,
         'HILL_CLIMBING_HISTORY': 1000,
         'SCHC_COUNT_METHOD': "count_all",
@@ -25,10 +25,10 @@ params = {
         'RUNS': 1,
 
         # Class of problem
-        'FITNESS_FUNCTION': "bpmn_fitness",
+        'FITNESS_FUNCTION': "bpmn_fitness_2",
 
         # Select problem dataset
-        'DATASET_TRAIN': "Vladislavleva4/Train.txt",
+        'DATASET_TRAIN': None,
         'DATASET_TEST': None,
         'DATASET_DELIMITER': None,
 
@@ -95,7 +95,7 @@ params = {
         'MUTATION': "operators.mutation.int_flip_per_codon",
         # Set mutation probability (None defaults to 1 over the length of
         # the genome for each codon)
-        'MUTATION_PROBABILITY': 0.2,
+        'MUTATION_PROBABILITY': None,
         # Set number of mutation events
         'MUTATION_EVENTS': 1,
         # Prevents mutation from generating invalids.
@@ -164,17 +164,17 @@ params = {
         # string of each phenotype in a big list of all phenotypes. Saves all
         # fitness information on each individual. Gives you an idea of how much
         # repetition is in standard GE/GP.
-        'CACHE': False,
+        'CACHE': True,
         # Uses the cache to look up the fitness of duplicate individuals. CACHE
         # must be set to True if you want to use this.
-        'LOOKUP_FITNESS': False,
+        'LOOKUP_FITNESS': True,
         # Uses the cache to give a bad fitness to duplicate individuals. CACHE
         # must be True if you want to use this (obviously)
-        'LOOKUP_BAD_FITNESS': False,
+        'LOOKUP_BAD_FITNESS': True,
         # Removes duplicate individuals from the population by replacing them
         # with mutated versions of the original individual. Hopefully this will
         # encourage diversity in the population.
-        'MUTATE_DUPLICATES': False,
+        'MUTATE_DUPLICATES': True,
 
         # MULTIAGENT Parameters
         # True or False for Multiagent
