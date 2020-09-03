@@ -1,0 +1,47 @@
+<process> ::= start <endableFlow>
+
+<numOfTasks> ::= GE_RANGE:5
+
+<numOfGateways> ::= GE_RANGE:20
+
+<endableFlow> ::= <element> <endableFlow>|
+                  exsplit <endableFlow> <nextBranchEndable>|
+                  end
+
+<endableGotoFlow> ::= <element> <endableGotoFlow>|
+                      exsplit <endableGotoFlow> <nextBranchEndable>|
+                      goto(<identifier>)|
+                      end
+
+<nextBranch> ::= next <flow> <nextBranch>|
+                 next <flow> back|
+                 next back
+
+<nextParBranch> ::= next <flow> <nextParBranch>|
+                    next <flow> back
+
+<nextBranchEndable> ::= next <endableGotoFlow> back|
+                        next <endableGotoFlow> <nextBranchEndable>
+
+<flow> ::= <element> <flow>|
+           <element>
+
+<element> ::= <task>|
+              <parallel>|
+              <exclusive>|
+              <loop>|
+              <do_repeat>
+
+<task> ::= task(<numOfTasks>)
+
+<parallel> ::= par <flow> <nextParBranch>
+
+<exclusive> ::= ex <flow> <nextBranch>
+
+<do_repeat> ::= do <flow> repeat_after back |
+                do <flow> repeat_after <flow> back
+
+<loop> ::= loop <flow> back
+
+<identifier> ::= task<numOfTasks>|
+                 gat<numOfGateways>
