@@ -95,7 +95,7 @@ params = {
         'MUTATION': "operators.mutation.int_flip_per_ind",
         # Set mutation probability (None defaults to 1 over the length of
         # the genome for each codon)
-        'MUTATION_PROBABILITY': 0.3,
+        'MUTATION_PROBABILITY': 0.1,
         # Set number of mutation events
         'MUTATION_EVENTS': 1,
         # Prevents mutation from generating invalids.
@@ -190,7 +190,7 @@ params = {
 
         # CUSTOM
         # PROCESS MINING
-        'TRACES_XES_FILE': "running-example-just-two-cases.xes"
+        'TRACES_XES_FILE': "repair-example.xes"
 
 }
 

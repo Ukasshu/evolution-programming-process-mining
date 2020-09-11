@@ -224,7 +224,8 @@ class bpmn_fitness_2(base_ff):
         trcs = list(map(lambda mt: mt[1], max_traces))
         used_traces = list(map(lambda trc: trcs.count(trc), trcs))
         for i in range(len(max_traces)):
-            sum_of_logs_behaviors += max_traces[i][0] / used_traces[i]
+            if tuple(max_traces[i][1]) in markings:
+                sum_of_logs_behaviors += max_traces[i][0] / used_traces[i]
 
 
         paths = list(map(lambda mt: mt[2], max_traces))

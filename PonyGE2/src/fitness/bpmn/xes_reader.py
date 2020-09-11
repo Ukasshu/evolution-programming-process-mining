@@ -80,7 +80,12 @@ class XESReader:
 
         for event in inter[1]:
             traces[event["case_name"]].append(event)
-            set_of_tasks.add(event["concept:name"])
+
+            task_name = event["concept:name"]
+            if "lifecycle:transition" in event:
+                task_name = task_name + "+" + event["lifecycle:transition"]
+
+            set_of_tasks.add(task_name)
 
         return traces, list(set_of_tasks)
 
@@ -89,11 +94,14 @@ class XESReader:
 
         inter = XESReader.gain_log_info_table(xml_string)
 
+
         traces, tasks = XESReader.dict_to_list_of_traces(inter)
 
         tasks.sort()
 
-        self.simple_traces = list(map(lambda trace_keys: list(map(lambda task: tasks.index(task["concept:name"]), traces[trace_keys])), traces.keys()))
+        self.inter = inter
+
+        self.simple_traces = list(map(lambda trace_keys: list(map(lambda task: tasks.index( task["concept:name"] + "+" + task["lifecycle:transition"] if "lifecycle:transition" in task else task["concept:name"]), traces[trace_keys])), traces.keys()))
 
         self.traces = traces
         self.tasks = tasks

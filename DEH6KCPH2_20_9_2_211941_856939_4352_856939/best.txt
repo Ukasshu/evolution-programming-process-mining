@@ -1,0 +1,13 @@
+Generation:
+100
+
+Phenotype:
+start par task(3) task(0) next task(0) loop task(5) back back loop task(4) back loop task(7) back exsplit par loop do task(4) repeat_after back task(7) back task(7) next task(2) back task(1) end next end next task(2) end back
+
+Genotype:
+[26889, 54357, 25646, 61227, 38766, 74870, 75057, 39067, 81309, 15530, 10634, 96384, 58669, 32006, 71560, 55777, 53920, 31495, 66443, 6960, 2311, 21955, 60201, 69613, 144, 71598, 82243, 20769, 15050, 55833, 468, 144, 71598, 82243, 99497, 15050, 55833, 63591, 69502, 83622, 34826, 30810, 17250, 28523, 19202, 17250, 69694, 66650, 8767, 21955, 36322, 30348, 15101, 36810, 98522, 26015, 5905, 36810, 77654, 26015, 87545, 37759, 71560, 89432, 78130, 79032, 63990, 72108, 59953, 17861, 36921, 8467, 61876, 73068, 4805, 67051, 24730, 8147, 21240, 43510, 58394, 36798, 64167, 89620, 32469, 62360, 5949, 99038, 56377, 8767, 21955, 93323, 11165, 10224, 63990, 88234, 90074, 17861, 75478, 72048, 4805, 10930, 7207, 68459, 61876, 72048, 4805, 10930, 2655, 8147, 24678, 96351, 9052, 72490, 29801, 28154, 66691, 87663, 9337]
+Tree:
+(<process> start  (<endableFlow> (<element> (<parallel> par  (<flow> (<element> (<task> task( (<numOfTasks> 3) )))   (<flow> (<element> (<task> task( (<numOfTasks> 0) )))))   (<nextParBranch> next  (<flow> (<element> (<task> task( (<numOfTasks> 0) )))   (<flow> (<element> (<loop> loop  (<flow> (<element> (<task> task( (<numOfTasks> 5) ))))  back))))  back)))   (<endableFlow> (<element> (<loop> loop  (<flow> (<element> (<task> task( (<numOfTasks> 4) ))))  back))   (<endableFlow> (<element> (<loop> loop  (<flow> (<element> (<task> task( (<numOfTasks> 7) ))))  back))   (<endableFlow> exsplit  (<endableFlow> (<element> (<parallel> par  (<flow> (<element> (<loop> loop  (<flow> (<element> (<do_repeat> do  (<flow> (<element> (<task> task( (<numOfTasks> 4) ))))  repeat_after back))   (<flow> (<element> (<task> task( (<numOfTasks> 7) )))))  back))   (<flow> (<element> (<task> task( (<numOfTasks> 7) )))))   (<nextParBranch> next  (<flow> (<element> (<task> task( (<numOfTasks> 2) ))))  back)))   (<endableFlow> (<element> (<task> task( (<numOfTasks> 1) )))   (<endableFlow> end)))   (<nextBranchEndable> next  (<endableGotoFlow> end)   (<nextBranchEndable> next  (<endableGotoFlow> (<element> (<task> task( (<numOfTasks> 2) )))   (<endableGotoFlow> end))  back)))))))
+
+Fitness:
+67.12500239397683
