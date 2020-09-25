@@ -1,0 +1,19 @@
+max_tree_depth integer [8, 14] [14]
+max_tree_nodes integer [60, 1000000] [1000000] log
+selection categorical {tournament, truncation} [tournament]
+tournament_size integer [2, 20] [2]
+selection_proportion real [0.1, 0.9] [0.5]
+
+crossover_probability real [0.1, 0.9] [0.75]
+tournament_size | selection == tournament
+selection_proportion | selection == truncation
+mutate_duplicates categorical { True, False } [True]
+crossover categorical { fixed_onepoint, fixed_twopoint, variable_onepoint, variable_twopoint, subtree } [subtree]
+no_crossover_invalids categorical { True, False } [False]
+no_crossover_invalids | crossover != subtree
+mutation categorical { int_flip_per_codon, int_flip_per_ind, subtree } [subtree]
+no_mutation_invalids categorical { True, False } [True]
+no_mutation_invalids | mutation != subtree
+mutation_events integer [1, 10] [1]
+within_used categorical  {True, False } [True]
+within_used | mutation != subtree && crossover != subtree

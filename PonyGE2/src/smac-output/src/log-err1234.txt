@@ -1,0 +1,22 @@
+08:13:00.027 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Message: Error occured creating files
+08:13:00.031 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Exception:java.lang.IllegalStateException
+08:13:00.033 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - StackTrace:java.lang.IllegalStateException: Error occured creating files
+	at ca.ubc.cs.beta.aeatk.trajectoryfile.TrajectoryFileLogger.<init>(TrajectoryFileLogger.java:75)
+	at ca.ubc.cs.beta.smac.builder.SMACBuilder.getAutomaticConfigurator(SMACBuilder.java:258)
+	at ca.ubc.cs.beta.smac.builder.SMACBuilder.getAutomaticConfigurator(SMACBuilder.java:100)
+	at ca.ubc.cs.beta.smac.executors.SMACExecutor.oldMain(SMACExecutor.java:136)
+	at ca.ubc.cs.beta.smac.executors.SMACExecutor.main(SMACExecutor.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at ca.ubc.cs.beta.aeatk.ant.execscript.Launcher.main(Launcher.java:37)
+Caused by: java.io.FileNotFoundException: C:\studia\magisterka\PonyGE2\src\smac-output\src\detailed-traj-run-1234.csv (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
+	at ca.ubc.cs.beta.aeatk.trajectoryfile.TrajectoryFileLogger.<init>(TrajectoryFileLogger.java:69)
+	... 9 more
+

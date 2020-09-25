@@ -215,7 +215,7 @@ class bpmn_fitness_2(base_ff):
         # is_really_loop_task = [any([tr.count(t) > 1 for tr in self.reader.simple_traces]) for t in loop_tasks]
         is_really_loop_task = [self.reader.max_occurences[simple_graph[t]["num"]] > 1 for t in loop_tasks]
 
-        return (1 - ((len(is_really_loop_task) - sum(is_really_loop_task)) / self.reader.number_of_tasks)) * (1 - (missing_tasks + duplicates_number) / (self.reader.number_of_tasks + len(task_nums))) * 100
+        return (1 - ((len(is_really_loop_task) - sum(is_really_loop_task)) / len(task_nums))) * (1 - (missing_tasks + duplicates_number) / (self.reader.number_of_tasks + len(task_nums))) * 100
 
     def precision(self, markings, max_traces, simple_graph):
         """PRECISION"""

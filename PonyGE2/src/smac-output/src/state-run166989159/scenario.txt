@@ -1,0 +1,6 @@
+algo = ./tune.py
+paramfile = ./params.pcs
+run_obj = quality
+wallclock_limit = 28800
+deterministic = 0
+cutoff_time = 600

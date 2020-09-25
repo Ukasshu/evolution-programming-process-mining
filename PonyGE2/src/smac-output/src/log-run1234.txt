@@ -1,0 +1,476 @@
+08:12:59.715 [main] INFO  c.u.c.b.a.l.ComplexLoggingOptions - Logging to: C:\studia\magisterka\PonyGE2\src\smac-output\src\log-run1234.txt
+08:12:59.729 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Algorithm Execution & Abstraction Toolkit is v2.10.03-master-814 (ebf4c8c913d5) 
+08:12:59.729 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Java Runtime Environment is OpenJDK 64-Bit Server VM (11.0.8) 
+08:12:59.729 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of OS is Windows 10 10.0 (amd64) 
+08:12:59.729 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Random Forest Library is v1.10.01-master-120 (b68439c2c391) 
+08:12:59.729 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of SMAC is v2.10.03-master-778 (3ee628ef9bf2) 
+08:12:59.730 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - Call String: smac.bat --scenario-file scenario.txt --use-instances false --seed 1234 
+08:12:59.731 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ********** The next bit of output can be ignored, it is merely useful for debugging **********
+08:12:59.731 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========Enviroment Variables===========
+=::=::\
+=C:=C:\studia\magisterka\PonyGE2\src
+=ExitCode=00000001
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\SG0303583\AppData\Roaming
+COMPUTERNAME=DEH6KCPH2
+CYGWIN=nodosfilewarning
+ComSpec=C:\Windows\system32\cmd.exe
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+DIR=C:\studia\smac-v2.10.03-master-778\
+DriverData=C:\Windows\System32\Drivers\DriverData
+EXEC=ca.ubc.cs.beta.smac.executors.SMACExecutor
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+HOMEDRIVE=C:
+HOMEPATH=\Users\SG0303583
+JAVA_HOME=C:\aws\jdk11.0.8_10
+LOCALAPPDATA=C:\Users\SG0303583\AppData\Local
+LOGONSERVER=\\SNAWSFRADC02
+NO_PROXY=localhost,127.0.0.1,nexus.sabre.com,maven.sabre.com,apps.sabre.com,licenses.sabre.com
+NUMBER_OF_PROCESSORS=8
+NVM_HOME=C:\Users\SG0303583\AppData\Roaming\nvm
+NVM_SYMLINK=C:\Program Files\nodejs
+OS=Windows_NT
+OneDrive=C:\Users\SG0303583\OneDrive - Sabre
+OneDriveCommercial=C:\Users\SG0303583\OneDrive - Sabre
+OneDriveSync=C:\Users\SG0303583\OneDrive - Sabre
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.JS;.WS;.MSC
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=5e03
+PROMPT=$P$G
+PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+Path=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\apache-maven-3.3.9\bin;C:\Users\SG0303583\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\;C:\Program Files\Git\cmd;C:\aws\jdk11.0.8_10\bin;C:\Tools\touch;C:\Windows\SysWOW64;C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32;C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\SG0303583\AppData\Local\Microsoft\WindowsApps;C:\Users\SG0303583\AppData\Roaming\nvm;C:\Program Files\nodejs;;C:\Users\SG0303583\AppData\Local\Programs\Microsoft VS Code\bin
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+SESSIONNAME=Console
+SMACMEM=1024
+SOCKET_BASE=330
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\SG0303~1\AppData\Local\Temp\5
+TMP=C:\Users\SG0303~1\AppData\Local\Temp\5
+UATDATA=C:\Windows\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77
+USERDNSDOMAIN=IAMSABRE.SABRENOW.COM
+USERDOMAIN=iamsabre
+USERDOMAIN_ROAMINGPROFILE=iamsabre
+USERNAME=SG0303583
+USERPROFILE=C:\Users\SG0303583
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+jarconcat=C:\studia\smac-v2.10.03-master-778\lib\spi-0.2.4.jar;C:\studia\smac-v2.10.03-master-778\lib\smac.jar;C:\studia\smac-v2.10.03-master-778\lib\smac-src.jar;C:\studia\smac-v2.10.03-master-778\lib\slf4j-api-1.7.5.jar;C:\studia\smac-v2.10.03-master-778\lib\opencsv-2.3.jar;C:\studia\smac-v2.10.03-master-778\lib\numerics4j-1.3.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-core-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-classic-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-access-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\jmatharray.jar;C:\studia\smac-v2.10.03-master-778\lib\jcommander.jar;C:\studia\smac-v2.10.03-master-778\lib\jcip-annotations.jar;C:\studia\smac-v2.10.03-master-778\lib\jcip-annotations-src.jar;C:\studia\smac-v2.10.03-master-778\lib\Jama-1.0.2.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-databind-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-core-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-annotations-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\guava-14.0.1.jar;C:\studia\smac-v2.10.03-master-778\lib\fastrf.jar;C:\studia\smac-v2.10.03-master-778\lib\fastrf-src.jar;C:\studia\smac-v2.10.03-master-778\lib\exp4j-0.4.3.BETA-3.jar;C:\studia\smac-v2.10.03-master-778\lib\exp4j-0.3.10.jar;C:\studia\smac-v2.10.03-master-778\lib\DomainInter.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-math3-3.3.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-math-2.2.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-io-2.1.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-collections-3.2.1.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-collections-3.2.1-sources.jar;C:\studia\smac-v2.10.03-master-778\lib\aeatk.jar;C:\studia\smac-v2.10.03-master-778\lib\aeatk-src.jar;C:\studia\smac-v2.10.03-master-778\lib\spi-0.2.4.jar;C:\studia\smac-v2.10.03-master-778\lib\smac.jar;C:\studia\smac-v2.10.03-master-778\lib\smac-src.jar;C:\studia\smac-v2.10.03-master-778\lib\slf4j-api-1.7.5.jar;C:\studia\smac-v2.10.03-master-778\lib\opencsv-2.3.jar;C:\studia\smac-v2.10.03-master-778\lib\numerics4j-1.3.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-core-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-classic-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-access-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\jmatharray.jar;C:\studia\smac-v2.10.03-master-778\lib\jcommander.jar;C:\studia\smac-v2.10.03-master-778\lib\jcip-annotations.jar;C:\studia\smac-v2.10.03-master-778\lib\jcip-annotations-src.jar;C:\studia\smac-v2.10.03-master-778\lib\Jama-1.0.2.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-databind-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-core-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-annotations-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\guava-14.0.1.jar;C:\studia\smac-v2.10.03-master-778\lib\fastrf.jar;C:\studia\smac-v2.10.03-master-778\lib\fastrf-src.jar;C:\studia\smac-v2.10.03-master-778\lib\exp4j-0.4.3.BETA-3.jar;C:\studia\smac-v2.10.03-master-778\lib\exp4j-0.3.10.jar;C:\studia\smac-v2.10.03-master-778\lib\DomainInter.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-math3-3.3.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-math-2.2.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-io-2.1.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-collections-3.2.1.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-collections-3.2.1-sources.jar;C:\studia\smac-v2.10.03-master-778\lib\aeatk.jar;C:\studia\smac-v2.10.03-master-778\lib\aeatk-src.jar;
+windir=C:\Windows
+
+08:12:59.732 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - Hostname:DEH6KCPH2
+08:12:59.732 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========System Properties==============
+ERRLOG=C:\studia\magisterka\PonyGE2\src\smac-output\src\log-err1234.txt
+NUMRUN=1234
+OUTPUTDIR=C:\studia\magisterka\PonyGE2\src\smac-output\src
+ROOT-LEVEL=INFO
+RUNLOG=C:\studia\magisterka\PonyGE2\src\smac-output\src\log-run1234.txt
+STDOUT-LEVEL=INFO
+WARNLOG=C:\studia\magisterka\PonyGE2\src\smac-output\src\log-warn1234.txt
+awt.toolkit=sun.awt.windows.WToolkit
+file.encoding=Cp1252
+file.separator=\
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+java.class.path=C:\studia\smac-v2.10.03-master-778\conf\;C:\studia\smac-v2.10.03-master-778\patches\;C:\studia\smac-v2.10.03-master-778\lib\spi-0.2.4.jar;C:\studia\smac-v2.10.03-master-778\lib\smac.jar;C:\studia\smac-v2.10.03-master-778\lib\smac-src.jar;C:\studia\smac-v2.10.03-master-778\lib\slf4j-api-1.7.5.jar;C:\studia\smac-v2.10.03-master-778\lib\opencsv-2.3.jar;C:\studia\smac-v2.10.03-master-778\lib\numerics4j-1.3.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-core-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-classic-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-access-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\jmatharray.jar;C:\studia\smac-v2.10.03-master-778\lib\jcommander.jar;C:\studia\smac-v2.10.03-master-778\lib\jcip-annotations.jar;C:\studia\smac-v2.10.03-master-778\lib\jcip-annotations-src.jar;C:\studia\smac-v2.10.03-master-778\lib\Jama-1.0.2.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-databind-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-core-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-annotations-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\guava-14.0.1.jar;C:\studia\smac-v2.10.03-master-778\lib\fastrf.jar;C:\studia\smac-v2.10.03-master-778\lib\fastrf-src.jar;C:\studia\smac-v2.10.03-master-778\lib\exp4j-0.4.3.BETA-3.jar;C:\studia\smac-v2.10.03-master-778\lib\exp4j-0.3.10.jar;C:\studia\smac-v2.10.03-master-778\lib\DomainInter.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-math3-3.3.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-math-2.2.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-io-2.1.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-collections-3.2.1.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-collections-3.2.1-sources.jar;C:\studia\smac-v2.10.03-master-778\lib\aeatk.jar;C:\studia\smac-v2.10.03-master-778\lib\aeatk-src.jar;C:\studia\smac-v2.10.03-master-778\lib\spi-0.2.4.jar;C:\studia\smac-v2.10.03-master-778\lib\smac.jar;C:\studia\smac-v2.10.03-master-778\lib\smac-src.jar;C:\studia\smac-v2.10.03-master-778\lib\slf4j-api-1.7.5.jar;C:\studia\smac-v2.10.03-master-778\lib\opencsv-2.3.jar;C:\studia\smac-v2.10.03-master-778\lib\numerics4j-1.3.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-core-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-classic-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\logback-access-1.1.2.jar;C:\studia\smac-v2.10.03-master-778\lib\jmatharray.jar;C:\studia\smac-v2.10.03-master-778\lib\jcommander.jar;C:\studia\smac-v2.10.03-master-778\lib\jcip-annotations.jar;C:\studia\smac-v2.10.03-master-778\lib\jcip-annotations-src.jar;C:\studia\smac-v2.10.03-master-778\lib\Jama-1.0.2.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-databind-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-core-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\jackson-annotations-2.3.1.jar;C:\studia\smac-v2.10.03-master-778\lib\guava-14.0.1.jar;C:\studia\smac-v2.10.03-master-778\lib\fastrf.jar;C:\studia\smac-v2.10.03-master-778\lib\fastrf-src.jar;C:\studia\smac-v2.10.03-master-778\lib\exp4j-0.4.3.BETA-3.jar;C:\studia\smac-v2.10.03-master-778\lib\exp4j-0.3.10.jar;C:\studia\smac-v2.10.03-master-778\lib\DomainInter.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-math3-3.3.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-math-2.2.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-io-2.1.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-collections-3.2.1.jar;C:\studia\smac-v2.10.03-master-778\lib\commons-collections-3.2.1-sources.jar;C:\studia\smac-v2.10.03-master-778\lib\aeatk.jar;C:\studia\smac-v2.10.03-master-778\lib\aeatk-src.jar;C:\studia\smac-v2.10.03-master-778\patches\ 
+java.class.version=55.0
+java.home=C:\aws\jdk11.0.8_10
+java.io.tmpdir=C:\Users\SG0303~1\AppData\Local\Temp\5\
+java.library.path=C:\aws\jdk11.0.8_10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\apache-maven-3.3.9\bin;C:\Users\SG0303583\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\;C:\Program Files\Git\cmd;C:\aws\jdk11.0.8_10\bin;C:\Tools\touch;C:\Windows\SysWOW64;C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32;C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\SG0303583\AppData\Local\Microsoft\WindowsApps;C:\Users\SG0303583\AppData\Roaming\nvm;C:\Program Files\nodejs;;C:\Users\SG0303583\AppData\Local\Programs\Microsoft VS Code\bin;.
+java.runtime.name=OpenJDK Runtime Environment
+java.runtime.version=11.0.8+10-LTS
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=11
+java.vendor=Amazon.com Inc.
+java.vendor.url=https://aws.amazon.com/corretto/
+java.vendor.url.bug=https://github.com/corretto/corretto-11/issues/
+java.vendor.version=Corretto-11.0.8.10.1
+java.version=11.0.8
+java.version.date=2020-07-14
+java.vm.compressedOopsMode=32-bit
+java.vm.info=mixed mode
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=11
+java.vm.vendor=Amazon.com Inc.
+java.vm.version=11.0.8+10-LTS
+jdk.debug=release
+line.separator=
+
+logback.configurationFile=ca/ubc/cs/beta/aeatk/logging/complex-logback.xml
+os.arch=amd64
+os.name=Windows 10
+os.version=10.0
+path.separator=;
+sun.arch.data.model=64
+sun.boot.library.path=C:\aws\jdk11.0.8_10\bin
+sun.cpu.endian=little
+sun.cpu.isalist=amd64
+sun.desktop=windows
+sun.io.unicode.encoding=UnicodeLittle
+sun.java.command=ca.ubc.cs.beta.aeatk.ant.execscript.Launcher ca.ubc.cs.beta.smac.executors.SMACExecutor --scenario-file scenario.txt --use-instances false --seed 1234
+sun.java.launcher=SUN_STANDARD
+sun.jnu.encoding=Cp1252
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+sun.os.patch.level=
+sun.stderr.encoding=cp437
+sun.stdout.encoding=cp437
+user.country=US
+user.dir=C:\studia\magisterka\PonyGE2\src
+user.home=C:\Users\SG0303583
+user.language=en
+user.name=SG0303583
+user.script=
+user.timezone=Europe/Belgrade
+user.variant=
+
+08:12:59.733 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - ==========Configuration Options==========
+[SMACOptions]
+ adaptiveCapping = false
+ alwaysRunInitialConfiguration = false
+ capAddSlack = 1.0
+ capSlack = 1.3
+classicInitModeOpts = [ClassicInitializationProcedureOptions]
+		 initialIncumbentRuns = 1
+
+dciModeOpts = [DoublingCappingInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+
+ucip = [UnbiasChallengerInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+		 cpulimit = 0
+
+ deterministicInstanceOrdering = false
+ doValidation = true
+ execMode = SMAC
+ experimentDir = C:\studia\magisterka\PonyGE2\src\
+ expFunc = null
+help = [HelpOptions]
+		 showHiddenParameters = false
+		 showHelp = false
+		 helpLevel = BASIC
+		 showVersion = false
+		 helpDefaults = C:\Users\SG0303583\.aeatk\help.opt
+
+ initialChallengeRuns = 1
+ initialIncumbent = DEFAULT
+ initializationMode = CLASSIC
+ intensificationPercentage = 0.5
+ initialChallengers = []
+ initialChallengersIntensificationTime = 2147483647
+ iterativeCappingBreakOnFirstCompletion = false
+ iterativeCappingK = 1
+logOptions = [ComplexLoggingOptions]
+		 consoleLogLevel = INFO
+		 logLevel = INFO
+
+ maxIncumbentRuns = 2000
+mbOptions = [ModelBuildingOptions]
+		 maskCensoredDataAsKappaMax = false
+		 maskInactiveConditionalParametersAsDefaultValue = true
+		 maskCensoredDataAsUncensored = false
+		 imputationIterations = 2
+
+ modelHashCodeFile = null
+ numberOfChallengers = 10
+ numberOfRandomConfigsInEI = 10000
+ numberOfRandomConfigsUsedForLocalSearch = 0
+ numPCA = 7
+ optionFile = null
+ optionFile2 = null
+randomForestOptions = [RandomForestOptions]
+		 brokenVarianceCalculation = false
+		 freeMemoryPercentageToSubsample = 0.25
+		 fullTreeBootstrap = false
+		 ignoreConditionality = false
+		 imputeMean = false
+		 logModel = false
+		 minVariance = 1.0E-14
+		 numTrees = 10
+		 penalizeImputedValues = false
+		 preprocessMarginal = true
+		 ratioFeatures = 0.8333333333333334
+		 shuffleImputedValues = false
+		 splitMin = 10
+		 storeDataInLeaves = false
+		 subsamplePercentage = 0.9
+		 subsampleValuesWhenLowMemory = false
+
+runGroupOptions = [RunGroupOptions]
+		 runGroupName = %SCENARIO_NAME
+		 runGroupExit = false
+		 replacementChar = %
+
+scenarioConfig = [ScenarioOptions]
+		 _runObj = QUALITY
+		 intraInstanceObj = null
+		 interInstanceObj = MEAN
+		limitOptions = [TerminationCriteriaOptions]
+				 tunerTimeout = 2147483647
+				 numIterations = 2147483647
+				 runtimeLimit = 28800
+				 totalNumRunsLimit = 9223372036854775807
+				 countSMACTimeAsTunerTime = true
+				 challengeIncumbentAttempts = 1000
+				 fileToWatch = null
+
+		instanceOptions = [ProblemInstanceOptions]
+				 instanceFile = null
+				 instanceFeatureFile = null
+				 testInstanceFile = null
+				 checkInstanceFilesExist = false
+				 useInstances = false
+				 instanceSuffix = null
+				 testInstanceSuffix = null
+				 ignoreFeatures = false
+
+		 scenarioFile = C:\studia\magisterka\PonyGE2\src\scenario.txt
+		 outputDirectory = C:\studia\magisterka\PonyGE2\src\smac-output
+		 invalidScenarioReason = null
+		algoExecOptions = [AlgorithmExecutionOptions]
+				 algoExec = python ./tune.py
+				 algoExecDir = C:\studia\magisterka\PonyGE2\src
+				 deterministic = false
+				 cutoffTime = 600.0
+				 cutoffLength = -1.0
+				 additionalContext = {}
+				taeOpts = [TargetAlgorithmEvaluatorOptions]
+						 targetAlgorithmEvaluator = CLI
+						 abortOnCrash = false
+						 abortOnFirstRunCrash = true
+						 retryCount = 0
+						 cacheRuns = false
+						 cacheDebug = false
+						 useDynamicCappingExclusively = false
+						 reportStrictlyIncreasingRuntimes = false
+						 boundRuns = false
+						 maxConcurrentAlgoExecs = 1
+						 exitOnFailure = false
+						 runHashCodeFile = null
+						 leakMemory = false
+						 leakMemoryAmount = 1024
+						 verifySAT = null
+						 checkSATConsistency = true
+						 checkSATConsistencyException = true
+						 callObserverBeforeCompletion = true
+						prePostOptions = [PrePostCommandOptions]
+								 preCommand = null
+								 postCommand = null
+								 exceptionOnError = false
+								 logOutput = true
+								 directory = C:\studia\magisterka\PonyGE2\src\.
+
+						 checkResultOrderConsistent = false
+						 skipOutstandingEvaluationsTAE = false
+						 logRequestResponses = false
+						 logRequestResponsesRCOnly = false
+						 trackRunsScheduled = false
+						 trackRunsScheduledResolution = 1.0
+						 uncleanShutdownCheck = true
+						 killCaptimeExceedingRun = true
+						 killCaptimeExceedingRunFactor = 10.0
+						 checkRunConfigsUnique = true
+						 checkRunConfigsUniqueException = true
+						 observeWalltimeIfNoRuntime = true
+						 observeWalltimeScale = 0.95
+						 observeWalltimeDelay = 5.0
+						 synchronousObserver = true
+						 taeDefaults = C:\Users\SG0303583\.aeatk\tae.opt
+						ttaedo = [TransformTargetAlgorithmEvaluatorDecoratorOptions]
+								 transform = false
+								 transformValidValuesOnly = true
+								 SAT_runtime_transform = R
+								 SAT_quality_transform = Q
+								 UNSAT_runtime_transform = R
+								 UNSAT_quality_transform = Q
+								 TIMEOUT_runtime_transform = R
+								 TIMEOUT_quality_transform = Q
+								 other_runtime_transform = R
+								 other_quality_transform = Q
+
+						tForkOptions = [ForkingTargetAlgorithmEvaluatorDecoratorOptions]
+								 forkToTAE = null
+								fPolicyOptions = [ForkingTargetAlgorithmEvaluatorDecoratorPolicyOptions]
+										 fPolicy = null
+										 duplicateOnSlaveQuickTimeout = 5
+
+
+						 fileToWatch = null
+						 warnIfNoResponseFromTAE = 120
+						 taeStopProcessingOnShutdown = true
+						 filecache = false
+						 fileCacheSource = C:\studia\magisterka\PonyGE2\src\.\runcache
+						 fileCacheOutput = C:\studia\magisterka\PonyGE2\src\.\runcache
+						 fileCacheCrashOnMiss = false
+						 transformCrashedQuality = true
+						 transformCrashedQualityValue = 1.0E9
+						 filterZeroCutoffRuns = true
+
+				paramFileDelegate = [ParamConfigurationSpaceOptions]
+						 paramFile = ./params.pcs
+						 searchSubspace = null
+						 searchSubspaceFile = null
+						 continuousNeighbours = 4
+
+
+
+seedOptions = [SeedOptions]
+		 seedOffset = 0
+		 numRun = 1234
+		 initialSeedMap = {}
+
+ smacDefaults = C:\Users\SG0303583\.aeatk\smac.opt
+stateOpts = [StateFactoryOptions]
+		 stateSerializer = LEGACY
+		 statedeSerializer = LEGACY
+		 restoreStateFrom = null
+		 restoreIteration = null
+		 restoreScenario = null
+		 cleanOldStatesOnSuccess = true
+		 saveContextWithState = true
+
+trackingOptions = [ParamConfigurationOriginTrackingOptions]
+		 configTracking = false
+
+validationOptions = [ValidationOptions]
+		 maxTimestamp = -1.0
+		 minTimestamp = 0.0
+		 multFactor = 2.0
+		 numberOfTestInstances = 2147483647
+		 numberOfTestSeedsPerInstance = 1000
+		 numberOfValidationRuns = 1
+		 outputFileSuffix = 
+		 saveStateFile = false
+		 useWallClockTime = true
+		 validateAll = false
+		 validateOnlyIfTunerTimeReached = 0.0
+		 validateOnlyIfWallTimeReached = 0.0
+		 validateOnlyLastIncumbent = true
+		 validationHeaders = true
+		 validationRoundingMode = UP
+
+warmStartOptions = [WarmStartOptions]
+		 warmStartStateFrom = null
+		 restoreIteration = 2147483647
+
+ validationSeed = 0
+ saveRunsEveryIteration = false
+ stateQuickSaves = true
+ shutdownTAEWhenDone = true
+ validationCores = null
+ shareModelMode = false
+ shareRunDataFrequency = 300
+ shareModeModeTAE = true
+ writeRunData = true
+ defaultHandler = USE_ALL
+ sharedModeModeAssymetricMode = false
+
+[AnalyticTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ cores = 0
+ observerFrequency = 100
+ func = CAMELBACK
+ scaleDelay = 1.0
+
+[BlackHoleTargetAlgorithmEvaluatorOptions]
+ warnings = true
+
+[CommandLineTargetAlgorithmEvaluatorOptions]
+ observerFrequency = 500
+ concurrentExecution = true
+ cores = 1
+ logAllCallStrings = false
+ logAllResultLines = false
+ logAllCallsAndResultLines = false
+ logAllProcessOutput = false
+ listenForUpdates = true
+ paramArgumentsContainQuotes = false
+ pgEnvKillCommand = null
+ pgNiceKillCommand = bash -c "kill -s TERM -%pid"
+ pgForceKillCommand = bash -c "kill -s KILL -%pid"
+ procNiceKillCommand = kill -s TERM %pid
+ procForceKillCommand = kill -s KILL %pid
+ smacDefaults = C:\Users\SG0303583\.aeatk\cli-tae.opt
+
+[ConstantTargetAlgorithmEvaluatorOptions]
+ runResult = SAT
+ runtime = 1.0
+ quality = 0.0
+ runlength = 0.0
+ additionalRunData = 
+
+[IPCTargetAlgorithmEvaluatorOptions]
+ persistent = false
+ ipcMechanism = UDP
+ encodingMechanism = CALL_STRING
+ remoteHost = 127.0.0.1
+ remotePort = 5050
+ udpPacketSize = 4096
+ localPort = 0
+ execScript = null
+ execScriptOutput = false
+ poolConnections = false
+ ipcDefaults = C:\Users\SG0303583\.aeatk\ipc-tae.opt
+ asyncThreads = 9
+
+[PreloadedResponseTargetAlgorithmEvaluatorOptions]
+ preloadedResponses = 
+ runLength = -1.0
+ quality = 0.0
+ additionalRunData = 
+
+[RandomResponseTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ additionalRunData = 
+ cores = 0
+ maxResponse = 10.0
+ minResponse = 0.0
+ observerFrequency = 500
+ trendCoefficient = 0.0
+ seed = 1599891178929
+ persistent = false
+ scaleDelay = 1.0
+
+
+08:12:59.824 [main] INFO  c.u.c.b.a.s.l.LegacyStateFactory - Found previous run data in state output folder: C:\studia\magisterka\PonyGE2\src\smac-output\src , renamed to: old-state-state-run1234-1599891179821
+08:13:00.027 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Message: Error occured creating files
+08:13:00.031 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - Maybe try running in DEBUG mode if you are missing information
+08:13:00.031 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Exception:java.lang.IllegalStateException
+08:13:00.033 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - StackTrace:java.lang.IllegalStateException: Error occured creating files
+	at ca.ubc.cs.beta.aeatk.trajectoryfile.TrajectoryFileLogger.<init>(TrajectoryFileLogger.java:75)
+	at ca.ubc.cs.beta.smac.builder.SMACBuilder.getAutomaticConfigurator(SMACBuilder.java:258)
+	at ca.ubc.cs.beta.smac.builder.SMACBuilder.getAutomaticConfigurator(SMACBuilder.java:100)
+	at ca.ubc.cs.beta.smac.executors.SMACExecutor.oldMain(SMACExecutor.java:136)
+	at ca.ubc.cs.beta.smac.executors.SMACExecutor.main(SMACExecutor.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at ca.ubc.cs.beta.aeatk.ant.execscript.Launcher.main(Launcher.java:37)
+Caused by: java.io.FileNotFoundException: C:\studia\magisterka\PonyGE2\src\smac-output\src\detailed-traj-run-1234.csv (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
+	at ca.ubc.cs.beta.aeatk.trajectoryfile.TrajectoryFileLogger.<init>(TrajectoryFileLogger.java:69)
+	... 9 more
+
+08:13:00.034 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - Exiting SMAC with failure. Log: C:\studia\magisterka\PonyGE2\src\smac-output\src\log-run1234.txt
+08:13:00.035 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - For a list of available commands use:  --help
+08:13:00.041 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - The Quickstart guide at available at: http://www.cs.ubc.ca/labs/beta/Projects/SMAC/ or alternatively (doc/quickstart.html) gives simple examples for getting up and running.
+08:13:00.042 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - The FAQ (doc/faq.pdf) contains commonly asked questions regarding troubleshooting, and usage.
+08:13:00.045 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - The Manual (doc/manual.pdf) contains detailed information on file format semantics.
+08:13:00.046 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - If you are stuck, please ask a question in the SMAC forum: https://groups.google.com/forum/#!forum/smac-forum

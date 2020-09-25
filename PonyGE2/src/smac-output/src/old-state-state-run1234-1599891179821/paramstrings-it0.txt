@@ -1,0 +1,1 @@
+1: crossover='subtree', crossover_probability='0.75', max_tree_depth='14', max_tree_nodes='1000000', mutate_duplicates='True', mutation='subtree', mutation_events='1', no_crossover_invalids='False', no_mutation_invalids='True', selection='tournament', selection_proportion='0.5', tournament_size='2', within_used='True'

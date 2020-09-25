@@ -1,0 +1,2 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Full Configuration","Predicted Performance (if available)",
+"0.0"," 1.7976931348623157E308","0.0","1","0.0", " crossover='subtree', crossover_probability='0.75', max_tree_depth='90', max_tree_nodes='1000000', mutate_duplicates='True', mutation='subtree', mutation_events='1', no_crossover_invalids='False', no_mutation_invalids='True', selection='tournament', selection_proportion='0.5', tournament_size='2', within_used='True'","NaN"

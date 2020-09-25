@@ -1,0 +1,2 @@
+"Validation Configuration ID","Configuration ","Sample Call String"
+"1","-crossover 'subtree' -crossover_probability '0.75' -max_tree_depth '15' -max_tree_nodes '1000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '1' -selection 'tournament' -tournament_size '2'","python tune.py no_instance 0 600.0 2147483647 375162 -crossover 'subtree' -crossover_probability '0.75' -max_tree_depth '15' -max_tree_nodes '1000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '1' -selection 'tournament' -tournament_size '2' "

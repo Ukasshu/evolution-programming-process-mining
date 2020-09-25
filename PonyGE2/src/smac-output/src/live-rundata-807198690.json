@@ -1,0 +1,2895 @@
+[ {
+  "@pi-id" : 2,
+  "pi-name" : "no_instance",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 1
+} ] {
+  "r-rc" : {
+    "@rc-id" : 2,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2,
+      "algo-exec" : "python tune.py",
+      "algo-exec-dir" : "C:\\studia\\magisterka\\PonyGE2\\src",
+      "algo-pcs" : {
+        "@pcs-id" : 2,
+        "pcs-filename" : "C:\\studia\\magisterka\\PonyGE2\\src\\.\\params.pcs",
+        "pcs-text" : "max_tree_depth integer [8, 90] [15]\nmax_tree_nodes integer [60, 1000] [1000] log\nselection categorical {tournament, truncation} [tournament]\ntournament_size integer [2, 20] [2]\nselection_proportion real [0.1, 0.9] [0.5]\n\ncrossover_probability real [0.1, 0.9] [0.75]\ntournament_size | selection == tournament\nselection_proportion | selection == truncation\nmutate_duplicates categorical { True, False } [True]\ncrossover categorical { fixed_onepoint, fixed_twopoint, variable_onepoint, variable_twopoint, subtree } [subtree]\nno_crossover_invalids categorical { True, False } [False]\nno_crossover_invalids | crossover != subtree\nmutation categorical { int_flip_per_codon, int_flip_per_ind, subtree } [subtree]\nno_mutation_invalids categorical { True, False } [True]\nno_mutation_invalids | mutation != subtree\nmutation_events integer [1, 10] [1]\nwithin_used categorical  {True, False } [True]\nwithin_used | mutation != subtree && crossover != subtree\n",
+        "pcs-subspace" : { }
+      },
+      "algo-cutoff" : 600.0,
+      "algo-deterministic" : false,
+      "algo-tae-context" : { }
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 2,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 5720238
+    },
+    "rc-pc" : {
+      "@pc-id" : 2,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "15",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : true
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 82.7983752126251,
+  "r-result-seed" : 5720238,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 13.279
+} {
+  "r-rc" : {
+    "@rc-id" : 3,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 9851017
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 20.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 81.1552353462674,
+  "r-result-seed" : 9851017,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 22.713
+} {
+  "r-rc" : {
+    "@rc-id" : 4,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 4,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.3084546044167869",
+        "max_tree_depth" : "87",
+        "max_tree_nodes" : "62",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "9",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "truncation",
+        "selection_proportion" : "0.822330661518074",
+        "tournament_size" : "12",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_mutation_invalids", "selection", "selection_proportion" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 9851017,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.541
+} {
+  "r-rc" : {
+    "@rc-id" : 5,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 5,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 3210949
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 15.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 80.97950300260453,
+  "r-result-seed" : 3210949,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 17.525
+} {
+  "r-rc" : {
+    "@rc-id" : 6,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 6,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_twopoint",
+        "crossover_probability" : "0.37614836751676906",
+        "max_tree_depth" : "44",
+        "max_tree_nodes" : "567",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "8",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.3056550832794927",
+        "tournament_size" : "12",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 9851017,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 12.171
+} {
+  "r-rc" : {
+    "@rc-id" : 7,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 7,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 3224644
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 12.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 90.95673119533139,
+  "r-result-seed" : 3224644,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 14.277
+} {
+  "r-rc" : {
+    "@rc-id" : 8,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 8,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_onepoint",
+        "crossover_probability" : "0.8736490282720791",
+        "max_tree_depth" : "87",
+        "max_tree_nodes" : "218",
+        "mutate_duplicates" : "False",
+        "mutation" : "subtree",
+        "mutation_events" : "10",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.655124935677297",
+        "tournament_size" : "6",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 5720238,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 590.595
+} {
+  "r-rc" : {
+    "@rc-id" : 9,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 9,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 10374912
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 12.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 82.99470573963522,
+  "r-result-seed" : 10374912,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 14.634
+} {
+  "r-rc" : {
+    "@rc-id" : 10,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 7
+    },
+    "rc-pc" : {
+      "@pc-id" : 10,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.15105184375841746",
+        "max_tree_depth" : "10",
+        "max_tree_nodes" : "421",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_ind",
+        "mutation_events" : "3",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "truncation",
+        "selection_proportion" : "0.7582988440086387",
+        "tournament_size" : "13",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 9.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 95.29411764705883,
+  "r-result-seed" : 3224644,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 11.02
+} {
+  "r-rc" : {
+    "@rc-id" : 11,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 11,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 8205317
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 21.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 86.61622493555605,
+  "r-result-seed" : 8205317,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 23.768
+} {
+  "r-rc" : {
+    "@rc-id" : 12,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 12,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.8048711842849108",
+        "max_tree_depth" : "28",
+        "max_tree_nodes" : "250",
+        "mutate_duplicates" : "True",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "5",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "truncation",
+        "selection_proportion" : "0.8083759758067698",
+        "tournament_size" : "8",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 9851017,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.387
+} {
+  "r-rc" : {
+    "@rc-id" : 13,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 13,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 13624930
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 17.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 86.46093939850776,
+  "r-result-seed" : 13624930,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 19.784
+} {
+  "r-rc" : {
+    "@rc-id" : 14,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 14,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.45447486587612673",
+        "max_tree_depth" : "77",
+        "max_tree_nodes" : "95",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "6",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "truncation",
+        "selection_proportion" : "0.28259723728330216",
+        "tournament_size" : "10",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 9851017,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.107
+} {
+  "r-rc" : {
+    "@rc-id" : 15,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 15,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 2351854
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 28.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 79.2659151983946,
+  "r-result-seed" : 2351854,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 30.666
+} {
+  "r-rc" : {
+    "@rc-id" : 16,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 9
+    },
+    "rc-pc" : {
+      "@pc-id" : 16,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.3748532815239439",
+        "max_tree_depth" : "8",
+        "max_tree_nodes" : "583",
+        "mutate_duplicates" : "True",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "4",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.12538294584746126",
+        "tournament_size" : "16",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 10374912,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.983
+} {
+  "r-rc" : {
+    "@rc-id" : 17,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 17,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 5793249
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 84.75374757883257,
+  "r-result-seed" : 5793249,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 13.349
+} {
+  "r-rc" : {
+    "@rc-id" : 18,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 15
+    },
+    "rc-pc" : {
+      "@pc-id" : 18,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_twopoint",
+        "crossover_probability" : "0.3660281159767761",
+        "max_tree_depth" : "55",
+        "max_tree_nodes" : "658",
+        "mutate_duplicates" : "False",
+        "mutation" : "subtree",
+        "mutation_events" : "8",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.4543513849725159",
+        "tournament_size" : "15",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 6000.626549999999,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 2351854,
+  "r-addl-run-data" : "Run Exceeded Captime -- Treating as CRASHED;Killed Manually",
+  "r-wallclock-time" : 6316.449
+} {
+  "r-rc" : {
+    "@rc-id" : 19,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 19,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 14966462
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 10.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 85.18032400317783,
+  "r-result-seed" : 14966462,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 12.366
+} {
+  "r-rc" : {
+    "@rc-id" : 20,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 20,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.8473124754768845",
+        "max_tree_depth" : "75",
+        "max_tree_nodes" : "886",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "2",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.4000433152055052",
+        "tournament_size" : "5",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 9851017,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 539.062
+} {
+  "r-rc" : {
+    "@rc-id" : 21,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 21,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 1072651
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 52.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 80.33356177965831,
+  "r-result-seed" : 1072651,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 54.163
+} {
+  "r-rc" : {
+    "@rc-id" : 22,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 7
+    },
+    "rc-pc" : {
+      "@pc-id" : 22,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.5735267870866996",
+        "max_tree_depth" : "14",
+        "max_tree_nodes" : "176",
+        "mutate_duplicates" : "True",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "5",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "truncation",
+        "selection_proportion" : "0.25310213564217526",
+        "tournament_size" : "20",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 3224644,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 9.944
+} {
+  "r-rc" : {
+    "@rc-id" : 23,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 23,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 13839870
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 29.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 80.99155695904942,
+  "r-result-seed" : 13839870,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 31.646
+} {
+  "r-rc" : {
+    "@rc-id" : 24,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 24,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.22229607806668492",
+        "max_tree_depth" : "46",
+        "max_tree_nodes" : "980",
+        "mutate_duplicates" : "True",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.2981040918356615",
+        "tournament_size" : "12",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 6000.65695,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 5720238,
+  "r-addl-run-data" : "Run Exceeded Captime -- Treating as CRASHED;Killed Manually",
+  "r-wallclock-time" : 6316.481
+} {
+  "r-rc" : {
+    "@rc-id" : 25,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 25,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 16064365
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 14.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 85.70315597535762,
+  "r-result-seed" : 16064365,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 16.267
+} {
+  "r-rc" : {
+    "@rc-id" : 26,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 26,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_onepoint",
+        "crossover_probability" : "0.4432792286303996",
+        "max_tree_depth" : "77",
+        "max_tree_nodes" : "498",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "9",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.838586223216933",
+        "tournament_size" : "4",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 5720238,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.224
+} {
+  "r-rc" : {
+    "@rc-id" : 27,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 27,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 5357328
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 43.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 81.04711392498352,
+  "r-result-seed" : 5357328,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 45.151
+} {
+  "r-rc" : {
+    "@rc-id" : 28,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 15
+    },
+    "rc-pc" : {
+      "@pc-id" : 28,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_onepoint",
+        "crossover_probability" : "0.24856667241967917",
+        "max_tree_depth" : "86",
+        "max_tree_nodes" : "999",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_ind",
+        "mutation_events" : "2",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.7177643656459668",
+        "tournament_size" : "4",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 8.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 93.97863531634263,
+  "r-result-seed" : 2351854,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 10.534
+} {
+  "r-rc" : {
+    "@rc-id" : 29,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 29,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 9941740
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 10.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 82.88103092489527,
+  "r-result-seed" : 9941740,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 12.464
+} {
+  "r-rc" : {
+    "@rc-id" : 30,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 27
+    },
+    "rc-pc" : {
+      "@pc-id" : 30,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_twopoint",
+        "crossover_probability" : "0.881571065229908",
+        "max_tree_depth" : "90",
+        "max_tree_nodes" : "67",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "9",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "truncation",
+        "selection_proportion" : "0.6850126695770297",
+        "tournament_size" : "7",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 5357328,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 9.912
+} {
+  "r-rc" : {
+    "@rc-id" : 31,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 31,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 1491271
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 10.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 90.02096052402644,
+  "r-result-seed" : 1491271,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 12.174
+} {
+  "r-rc" : {
+    "@rc-id" : 32,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 31
+    },
+    "rc-pc" : {
+      "@pc-id" : 32,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_twopoint",
+        "crossover_probability" : "0.7615201686835188",
+        "max_tree_depth" : "25",
+        "max_tree_nodes" : "996",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "6",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "truncation",
+        "selection_proportion" : "0.5628450641802564",
+        "tournament_size" : "20",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 1491271,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.019
+} {
+  "r-rc" : {
+    "@rc-id" : 33,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 33,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 4313519
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 88.28835587676187,
+  "r-result-seed" : 4313519,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 13.115
+} {
+  "r-rc" : {
+    "@rc-id" : 34,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 27
+    },
+    "rc-pc" : {
+      "@pc-id" : 34,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_twopoint",
+        "crossover_probability" : "0.45692491155782133",
+        "max_tree_depth" : "36",
+        "max_tree_nodes" : "79",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "7",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "truncation",
+        "selection_proportion" : "0.6334889609971042",
+        "tournament_size" : "12",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "selection_proportion" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 5357328,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 132.777
+} {
+  "r-rc" : {
+    "@rc-id" : 35,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 35,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 7023148
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 10.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 86.20424963659097,
+  "r-result-seed" : 7023148,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 12.405
+} {
+  "r-rc" : {
+    "@rc-id" : 36,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 36,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "15",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "4",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 13624930,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.23
+} {
+  "r-rc" : {
+    "@rc-id" : 37,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 37,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 2844356
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 81.9373521673902,
+  "r-result-seed" : 2844356,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 13.477
+} {
+  "r-rc" : {
+    "@rc-id" : 38,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 38,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_onepoint",
+        "crossover_probability" : "0.8649623455302512",
+        "max_tree_depth" : "38",
+        "max_tree_nodes" : "81",
+        "mutate_duplicates" : "False",
+        "mutation" : "subtree",
+        "mutation_events" : "2",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5074547182730488",
+        "tournament_size" : "2",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 9851017,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 27.641
+} {
+  "r-rc" : {
+    "@rc-id" : 39,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 39,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 4341220
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 85.46801524987619,
+  "r-result-seed" : 4341220,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 13.88
+} {
+  "r-rc" : {
+    "@rc-id" : 40,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 25
+    },
+    "rc-pc" : {
+      "@pc-id" : 40,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_onepoint",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "15",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 16064365,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 12.152
+} {
+  "r-rc" : {
+    "@rc-id" : 41,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 41,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 1842318
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 14.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 81.20774184178019,
+  "r-result-seed" : 1842318,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 16.547
+} {
+  "r-rc" : {
+    "@rc-id" : 42,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 42,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.5131945033155166",
+        "max_tree_depth" : "51",
+        "max_tree_nodes" : "158",
+        "mutate_duplicates" : "True",
+        "mutation" : "int_flip_per_ind",
+        "mutation_events" : "7",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.2676583128685931",
+        "tournament_size" : "15",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 9.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 94.6949795803223,
+  "r-result-seed" : 1842318,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 11.347
+} {
+  "r-rc" : {
+    "@rc-id" : 43,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 43,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 3077357
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 86.64697996417695,
+  "r-result-seed" : 3077357,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 13.886
+} {
+  "r-rc" : {
+    "@rc-id" : 44,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 5
+    },
+    "rc-pc" : {
+      "@pc-id" : 44,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_onepoint",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "15",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "2",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 3210949,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.83
+} {
+  "r-rc" : {
+    "@rc-id" : 45,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 45,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 5835093
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 13.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 85.79264752300243,
+  "r-result-seed" : 5835093,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 15.925
+} {
+  "r-rc" : {
+    "@rc-id" : 46,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 46,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.6210552798709494",
+        "max_tree_depth" : "38",
+        "max_tree_nodes" : "74",
+        "mutate_duplicates" : "True",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "9",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "truncation",
+        "selection_proportion" : "0.887349007645771",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 14966462,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.171
+} {
+  "r-rc" : {
+    "@rc-id" : 47,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 47,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 1406314
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 13.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 90.46038247257351,
+  "r-result-seed" : 1406314,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 15.743
+} {
+  "r-rc" : {
+    "@rc-id" : 48,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 5
+    },
+    "rc-pc" : {
+      "@pc-id" : 48,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.18578659421541366",
+        "max_tree_depth" : "79",
+        "max_tree_nodes" : "66",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_ind",
+        "mutation_events" : "8",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.6166918850575802",
+        "tournament_size" : "14",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_mutation_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 3210949,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 11.635
+} {
+  "r-rc" : {
+    "@rc-id" : 49,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 49,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 15827795
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 16.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 78.86146013279934,
+  "r-result-seed" : 15827795,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 18.743
+} {
+  "r-rc" : {
+    "@rc-id" : 50,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 50,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_twopoint",
+        "crossover_probability" : "0.3311119109153425",
+        "max_tree_depth" : "90",
+        "max_tree_nodes" : "112",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "4",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.4778367576317283",
+        "tournament_size" : "7",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 13624930,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.29
+} {
+  "r-rc" : {
+    "@rc-id" : 51,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 51,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 2675484
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 10.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 82.75266348933522,
+  "r-result-seed" : 2675484,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 12.48
+} {
+  "r-rc" : {
+    "@rc-id" : 52,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 17
+    },
+    "rc-pc" : {
+      "@pc-id" : 52,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.8974804078925613",
+        "max_tree_depth" : "71",
+        "max_tree_nodes" : "625",
+        "mutate_duplicates" : "False",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "truncation",
+        "selection_proportion" : "0.24026969665338377",
+        "tournament_size" : "9",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "selection", "selection_proportion" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 5793249,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 554.129
+} {
+  "r-rc" : {
+    "@rc-id" : 53,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 53,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 12098776
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 10.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 88.82974193935446,
+  "r-result-seed" : 12098776,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 12.47
+} {
+  "r-rc" : {
+    "@rc-id" : 54,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 17
+    },
+    "rc-pc" : {
+      "@pc-id" : 54,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.11089365198169583",
+        "max_tree_depth" : "16",
+        "max_tree_nodes" : "784",
+        "mutate_duplicates" : "True",
+        "mutation" : "int_flip_per_ind",
+        "mutation_events" : "6",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.4378009927225949",
+        "tournament_size" : "13",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_mutation_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 5793249,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 9.977
+} {
+  "r-rc" : {
+    "@rc-id" : 55,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 55,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 11882636
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 82.73012659253985,
+  "r-result-seed" : 11882636,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 13.822
+} {
+  "r-rc" : {
+    "@rc-id" : 56,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 9
+    },
+    "rc-pc" : {
+      "@pc-id" : 56,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.24856667241967917",
+        "max_tree_depth" : "86",
+        "max_tree_nodes" : "999",
+        "mutate_duplicates" : "False",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "tournament",
+        "selection_proportion" : "0.7177643656459668",
+        "tournament_size" : "4",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 10374912,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 498.603
+} {
+  "r-rc" : {
+    "@rc-id" : 57,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 57,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 16602464
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 85.78774969409015,
+  "r-result-seed" : 16602464,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 13.773
+} {
+  "r-rc" : {
+    "@rc-id" : 58,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 7
+    },
+    "rc-pc" : {
+      "@pc-id" : 58,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_onepoint",
+        "crossover_probability" : "0.6617635722899082",
+        "max_tree_depth" : "49",
+        "max_tree_nodes" : "130",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_ind",
+        "mutation_events" : "2",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "False",
+        "selection" : "truncation",
+        "selection_proportion" : "0.5066164589300914",
+        "tournament_size" : "10",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 3224644,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 9.965
+} {
+  "r-rc" : {
+    "@rc-id" : 59,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 59,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 8597254
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 17.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 87.20293926766814,
+  "r-result-seed" : 8597254,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 18.941
+} {
+  "r-rc" : {
+    "@rc-id" : 60,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 60,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_twopoint",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "15",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 5720238,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.551
+} {
+  "r-rc" : {
+    "@rc-id" : 61,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 61,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 3439150
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 10.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 87.77819921799947,
+  "r-result-seed" : 3439150,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 12.856
+} {
+  "r-rc" : {
+    "@rc-id" : 62,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 35
+    },
+    "rc-pc" : {
+      "@pc-id" : 62,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_onepoint",
+        "crossover_probability" : "0.16996881380769918",
+        "max_tree_depth" : "14",
+        "max_tree_nodes" : "671",
+        "mutate_duplicates" : "False",
+        "mutation" : "subtree",
+        "mutation_events" : "5",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.17772482713372106",
+        "tournament_size" : "4",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 7023148,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.477
+} {
+  "r-rc" : {
+    "@rc-id" : 63,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 63,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 1002487
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 23.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 82.99195733832283,
+  "r-result-seed" : 1002487,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 25.563
+} {
+  "r-rc" : {
+    "@rc-id" : 64,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 64,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "25",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 6000.65695,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 9851017,
+  "r-addl-run-data" : "Run Exceeded Captime -- Treating as CRASHED;Killed Manually",
+  "r-wallclock-time" : 6316.481
+} {
+  "r-rc" : {
+    "@rc-id" : 65,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 65,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 2566076
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 14.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 88.06628824239327,
+  "r-result-seed" : 2566076,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 16.249
+} {
+  "r-rc" : {
+    "@rc-id" : 66,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 49
+    },
+    "rc-pc" : {
+      "@pc-id" : 66,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_onepoint",
+        "crossover_probability" : "0.6977592205461861",
+        "max_tree_depth" : "63",
+        "max_tree_nodes" : "467",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "4",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.622842237643465",
+        "tournament_size" : "16",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 15827795,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 10.705
+} {
+  "r-rc" : {
+    "@rc-id" : 67,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 67,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 5625945
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 15.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 84.62580260802076,
+  "r-result-seed" : 5625945,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 18.271
+} {
+  "r-rc" : {
+    "@rc-id" : 68,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 17
+    },
+    "rc-pc" : {
+      "@pc-id" : 68,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "16",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 25.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 82.2203806151505,
+  "r-result-seed" : 5793249,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 27.481
+} {
+  "r-rc" : {
+    "@rc-id" : 69,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 53
+    },
+    "rc-pc" : {
+      "@pc-id" : 68
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 17.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 84.72685050056039,
+  "r-result-seed" : 12098776,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 19.64
+} {
+  "r-rc" : {
+    "@rc-id" : 70,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 15
+    },
+    "rc-pc" : {
+      "@pc-id" : 68
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 21.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 87.81550204744377,
+  "r-result-seed" : 2351854,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 23.774
+} {
+  "r-rc" : {
+    "@rc-id" : 71,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 71,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 1181656
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 32.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 83.55100203172645,
+  "r-result-seed" : 1181656,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 34.587
+} {
+  "r-rc" : {
+    "@rc-id" : 72,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 11
+    },
+    "rc-pc" : {
+      "@pc-id" : 72,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_onepoint",
+        "crossover_probability" : "0.35995535756250563",
+        "max_tree_depth" : "12",
+        "max_tree_nodes" : "69",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "truncation",
+        "selection_proportion" : "0.4605522183551505",
+        "tournament_size" : "20",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "selection_proportion" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 12.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 85.36193026502377,
+  "r-result-seed" : 8205317,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 15.227
+} {
+  "r-rc" : {
+    "@rc-id" : 73,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 73,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 9228451
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 13.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 90.39845700926263,
+  "r-result-seed" : 9228451,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 15.654
+} {
+  "r-rc" : {
+    "@rc-id" : 74,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 43
+    },
+    "rc-pc" : {
+      "@pc-id" : 74,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "15",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 3077357,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 11.34
+} {
+  "r-rc" : {
+    "@rc-id" : 75,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 75,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 288533
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 19.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 83.14814964569712,
+  "r-result-seed" : 288533,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 21.954
+} {
+  "r-rc" : {
+    "@rc-id" : 76,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 33
+    },
+    "rc-pc" : {
+      "@pc-id" : 76,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_onepoint",
+        "crossover_probability" : "0.5730803945532159",
+        "max_tree_depth" : "46",
+        "max_tree_nodes" : "296",
+        "mutate_duplicates" : "True",
+        "mutation" : "int_flip_per_codon",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "truncation",
+        "selection_proportion" : "0.7161724229002586",
+        "tournament_size" : "18",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "selection_proportion", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 10.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 94.3777071428047,
+  "r-result-seed" : 4313519,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 12.764
+} {
+  "r-rc" : {
+    "@rc-id" : 77,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 77,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 2560151
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 20.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 82.61076769631683,
+  "r-result-seed" : 2560151,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 23.125
+} {
+  "r-rc" : {
+    "@rc-id" : 78,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 43
+    },
+    "rc-pc" : {
+      "@pc-id" : 78,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_onepoint",
+        "crossover_probability" : "0.75",
+        "max_tree_depth" : "15",
+        "max_tree_nodes" : "1000",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "False",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.5",
+        "tournament_size" : "2",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "selection", "tournament_size" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 3077357,
+  "r-addl-run-data" : "ERROR: Wrapper did not output anything that matched the expected output (\"Result of algorithm run:...\"). Please try executing the wrapper directly",
+  "r-wallclock-time" : 13.228
+} {
+  "r-rc" : {
+    "@rc-id" : 79,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 79,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 12517203
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 11.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 92.28253123469293,
+  "r-result-seed" : 12517203,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 14.151
+} {
+  "r-rc" : {
+    "@rc-id" : 80,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 61
+    },
+    "rc-pc" : {
+      "@pc-id" : 80,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "fixed_twopoint",
+        "crossover_probability" : "0.487764688325505",
+        "max_tree_depth" : "53",
+        "max_tree_nodes" : "85",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_ind",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.46090587999535115",
+        "tournament_size" : "10",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "CRASHED",
+  "r-runtime" : 6000.65885,
+  "r-run-length" : 0.0,
+  "r-quality" : 1.0E9,
+  "r-result-seed" : 3439150,
+  "r-addl-run-data" : "Run Exceeded Captime -- Treating as CRASHED;Killed Manually",
+  "r-wallclock-time" : 6316.483
+} {
+  "r-rc" : {
+    "@rc-id" : 81,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 81,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 15743371
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 13.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 86.92833224253694,
+  "r-result-seed" : 15743371,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 16.506
+} {
+  "r-rc" : {
+    "@rc-id" : 82,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 21
+    },
+    "rc-pc" : {
+      "@pc-id" : 82,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "subtree",
+        "crossover_probability" : "0.35995535756250563",
+        "max_tree_depth" : "15",
+        "max_tree_nodes" : "69",
+        "mutate_duplicates" : "True",
+        "mutation" : "subtree",
+        "mutation_events" : "1",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "False",
+        "selection" : "truncation",
+        "selection_proportion" : "0.4605522183551505",
+        "tournament_size" : "20",
+        "within_used" : "True"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "selection", "selection_proportion" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 12.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 91.76340945342743,
+  "r-result-seed" : 1072651,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 14.48
+} {
+  "r-rc" : {
+    "@rc-id" : 83,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 83,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 7616303
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 16.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 85.43364789545136,
+  "r-result-seed" : 7616303,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 19.351
+} {
+  "r-rc" : {
+    "@rc-id" : 84,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 51
+    },
+    "rc-pc" : {
+      "@pc-id" : 84,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "crossover" : "variable_twopoint",
+        "crossover_probability" : "0.3733324968349029",
+        "max_tree_depth" : "25",
+        "max_tree_nodes" : "178",
+        "mutate_duplicates" : "False",
+        "mutation" : "int_flip_per_ind",
+        "mutation_events" : "7",
+        "no_crossover_invalids" : "True",
+        "no_mutation_invalids" : "True",
+        "selection" : "tournament",
+        "selection_proportion" : "0.2916791200041522",
+        "tournament_size" : "11",
+        "within_used" : "False"
+      },
+      "pc-active-parameters" : [ "crossover", "crossover_probability", "max_tree_depth", "max_tree_nodes", "mutate_duplicates", "mutation", "mutation_events", "no_crossover_invalids", "no_mutation_invalids", "selection", "tournament_size", "within_used" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 9.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 96.11433217811933,
+  "r-result-seed" : 2675484,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 11.34
+} {
+  "r-rc" : {
+    "@rc-id" : 85,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 600.0,
+    "rc-pisp" : {
+      "@pisp-id" : 85,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : 8817813
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 14.0,
+  "r-run-length" : 20.0,
+  "r-quality" : 86.56326345442844,
+  "r-result-seed" : 8817813,
+  "r-addl-run-data" : "0",
+  "r-wallclock-time" : 16.929
+}

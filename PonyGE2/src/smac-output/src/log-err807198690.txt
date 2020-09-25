@@ -1,0 +1,487 @@
+23:37:56.785 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 9851017 -crossover 'subtree' -crossover_probability '0.3084546044167869' -max_tree_depth '87' -max_tree_nodes '62' -mutate_duplicates 'False' -mutation 'int_flip_per_codon' -mutation_events '9' -no_mutation_invalids 'True' -selection 'truncation' -selection_proportion '0.822330661518074'  
+23:37:56.787 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+23:37:56.788 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:37:56.789 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-13 23:37:47.206306 
+23:37:56.789 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:37:56.789 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+23:37:56.790 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:37:56.791 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+23:37:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:37:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+23:37:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:37:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+23:37:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:37:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+23:37:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:37:56.812 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+23:38:26.658 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 9851017 -crossover 'variable_twopoint' -crossover_probability '0.37614836751676906' -max_tree_depth '44' -max_tree_nodes '567' -mutate_duplicates 'False' -mutation 'int_flip_per_codon' -mutation_events '8' -no_crossover_invalids 'False' -no_mutation_invalids 'False' -selection 'tournament' -tournament_size '12' -within_used 'True'  
+23:38:26.658 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+23:38:26.658 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:38:26.658 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-13 23:38:15.905149 
+23:38:26.658 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:38:26.658 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+23:38:26.659 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:38:26.659 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+23:38:26.659 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:38:26.660 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+23:38:26.660 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:38:26.660 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+23:38:26.660 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:38:26.661 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+23:38:26.661 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:38:26.661 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+23:48:34.006 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 5720238 -crossover 'variable_onepoint' -crossover_probability '0.8736490282720791' -max_tree_depth '87' -max_tree_nodes '218' -mutate_duplicates 'False' -mutation 'subtree' -mutation_events '10' -no_crossover_invalids 'False' -selection 'tournament' -tournament_size '6'  
+23:48:34.008 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+23:48:34.008 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:48:34.009 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-13 23:38:44.511156 
+23:48:34.009 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:48:34.009 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+23:48:34.010 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:48:34.010 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+23:48:34.011 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:48:34.011 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+23:48:34.012 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:48:34.012 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+23:48:34.012 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:48:34.013 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+23:48:34.013 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:48:34.013 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+23:49:34.250 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 9851017 -crossover 'fixed_twopoint' -crossover_probability '0.8048711842849108' -max_tree_depth '28' -max_tree_nodes '250' -mutate_duplicates 'True' -mutation 'int_flip_per_codon' -mutation_events '5' -no_crossover_invalids 'True' -no_mutation_invalids 'False' -selection 'truncation' -selection_proportion '0.8083759758067698' -within_used 'False'  
+23:49:34.250 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+23:49:34.251 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:49:34.251 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-13 23:49:24.902485 
+23:49:34.251 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:49:34.251 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+23:49:34.251 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:49:34.252 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+23:49:34.252 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:49:34.252 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+23:49:34.252 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:49:34.252 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+23:49:34.252 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:49:34.253 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+23:49:34.253 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:49:34.253 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+23:50:04.280 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 9851017 -crossover 'fixed_twopoint' -crossover_probability '0.45447486587612673' -max_tree_depth '77' -max_tree_nodes '95' -mutate_duplicates 'False' -mutation 'int_flip_per_codon' -mutation_events '6' -no_crossover_invalids 'False' -no_mutation_invalids 'True' -selection 'truncation' -selection_proportion '0.28259723728330216' -within_used 'False'  
+23:50:04.281 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+23:50:04.281 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:50:04.281 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-13 23:49:55.093898 
+23:50:04.281 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:50:04.282 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+23:50:04.282 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:04.282 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+23:50:04.282 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:04.283 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+23:50:04.283 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:04.283 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+23:50:04.283 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:04.283 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+23:50:04.284 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:04.284 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+23:50:46.186 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 10374912 -crossover 'fixed_twopoint' -crossover_probability '0.3748532815239439' -max_tree_depth '8' -max_tree_nodes '583' -mutate_duplicates 'True' -mutation 'int_flip_per_codon' -mutation_events '4' -no_crossover_invalids 'False' -no_mutation_invalids 'False' -selection 'tournament' -tournament_size '16' -within_used 'True'  
+23:50:46.187 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+23:50:46.187 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:50:46.187 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-13 23:50:36.322800 
+23:50:46.187 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:50:46.188 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+23:50:46.188 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:46.188 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+23:50:46.188 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:46.188 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+23:50:46.189 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:46.189 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+23:50:46.189 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:46.189 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+23:50:46.190 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:50:46.190 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+01:36:16.257 [CLI TAE (Observer Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - This shouldn't be possible
+java.lang.InterruptedException: null
+	at java.base/java.lang.ProcessImpl.waitFor(ProcessImpl.java:547) ~[na:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun.killProcess(CommandLineAlgorithmRun.java:1278) ~[aeatk.jar:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun.access$300(CommandLineAlgorithmRun.java:60) ~[aeatk.jar:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun$4.run(CommandLineAlgorithmRun.java:528) ~[aeatk.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+01:45:27.991 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 9851017 -crossover 'fixed_twopoint' -crossover_probability '0.8473124754768845' -max_tree_depth '75' -max_tree_nodes '886' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '2' -no_crossover_invalids 'True' -selection 'tournament' -tournament_size '5'  
+01:45:27.992 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+01:45:27.992 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+01:45:27.992 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 01:36:29.792766 
+01:45:27.992 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+01:45:27.992 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+01:45:27.993 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:45:27.993 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+01:45:27.993 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:45:27.993 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+01:45:27.994 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:45:27.994 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+01:45:27.994 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:45:27.994 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+01:45:27.994 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:45:27.994 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+01:46:32.217 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 3224644 -crossover 'fixed_twopoint' -crossover_probability '0.5735267870866996' -max_tree_depth '14' -max_tree_nodes '176' -mutate_duplicates 'True' -mutation 'int_flip_per_codon' -mutation_events '5' -no_crossover_invalids 'False' -no_mutation_invalids 'False' -selection 'truncation' -selection_proportion '0.25310213564217526' -within_used 'True'  
+01:46:32.218 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+01:46:32.218 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+01:46:32.218 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 01:46:23.194806 
+01:46:32.218 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+01:46:32.218 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+01:46:32.219 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:46:32.219 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+01:46:32.219 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:46:32.219 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+01:46:32.220 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:46:32.220 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+01:46:32.220 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:46:32.220 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+01:46:32.220 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+01:46:32.221 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:32:47.183 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 5720238 -crossover 'variable_onepoint' -crossover_probability '0.4432792286303996' -max_tree_depth '77' -max_tree_nodes '498' -mutate_duplicates 'False' -mutation 'int_flip_per_codon' -mutation_events '9' -no_crossover_invalids 'True' -no_mutation_invalids 'False' -selection 'tournament' -tournament_size '4' -within_used 'True'  
+03:32:47.184 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:32:47.184 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:32:47.184 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:32:37.854174 
+03:32:47.184 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:32:47.184 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:32:47.185 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:32:47.185 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:32:47.185 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:32:47.185 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:32:47.186 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:32:47.186 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:32:47.186 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:32:47.186 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:32:47.187 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:32:47.187 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:34:05.697 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 5357328 -crossover 'variable_twopoint' -crossover_probability '0.881571065229908' -max_tree_depth '90' -max_tree_nodes '67' -mutate_duplicates 'False' -mutation 'int_flip_per_codon' -mutation_events '9' -no_crossover_invalids 'False' -no_mutation_invalids 'True' -selection 'truncation' -selection_proportion '0.6850126695770297' -within_used 'False'  
+03:34:05.698 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:34:05.698 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:34:05.698 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:33:56.654344 
+03:34:05.698 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:34:05.699 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:34:05.699 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:05.699 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:34:05.700 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:05.719 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:34:05.719 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:05.719 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:34:05.719 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:05.720 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:34:05.720 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:05.720 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:34:28.077 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 1491271 -crossover 'variable_twopoint' -crossover_probability '0.7615201686835188' -max_tree_depth '25' -max_tree_nodes '996' -mutate_duplicates 'False' -mutation 'int_flip_per_codon' -mutation_events '6' -no_crossover_invalids 'True' -no_mutation_invalids 'False' -selection 'truncation' -selection_proportion '0.5628450641802564' -within_used 'False'  
+03:34:28.078 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:34:28.078 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:34:28.078 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:34:18.945785 
+03:34:28.078 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:34:28.078 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:34:28.079 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:34:28.080 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:36:54.095 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 5357328 -crossover 'variable_twopoint' -crossover_probability '0.45692491155782133' -max_tree_depth '36' -max_tree_nodes '79' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '7' -no_crossover_invalids 'False' -selection 'truncation' -selection_proportion '0.6334889609971042'  
+03:36:54.096 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:36:54.096 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:36:54.096 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:34:42.202028 
+03:36:54.097 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:36:54.097 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:36:54.097 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:36:54.116 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:36:54.116 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:36:54.116 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:36:54.117 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:36:54.117 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:36:54.117 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:36:54.117 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:36:54.117 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:36:54.118 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:37:16.957 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 13624930 -crossover 'subtree' -crossover_probability '0.75' -max_tree_depth '15' -max_tree_nodes '1000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '4' -selection 'tournament' -tournament_size '2'  
+03:37:16.958 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:37:16.958 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:37:16.959 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:37:07.612580 
+03:37:16.959 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:37:16.960 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:37:16.960 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:16.978 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:37:16.979 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:16.979 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:37:16.979 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:16.980 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:37:16.980 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:16.980 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:37:16.980 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:16.981 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:37:58.269 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 9851017 -crossover 'fixed_onepoint' -crossover_probability '0.8649623455302512' -max_tree_depth '38' -max_tree_nodes '81' -mutate_duplicates 'False' -mutation 'subtree' -mutation_events '2' -no_crossover_invalids 'True' -selection 'tournament' -tournament_size '2'  
+03:37:58.269 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:37:31.959225 
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:37:58.270 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:58.271 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:37:58.271 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:58.271 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:37:58.271 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:37:58.271 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:38:24.535 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 16064365 -crossover 'variable_onepoint' -crossover_probability '0.75' -max_tree_depth '15' -max_tree_nodes '1000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '1' -no_crossover_invalids 'False' -selection 'tournament' -tournament_size '2'  
+03:38:24.536 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 20 lines of output we saw were:
+03:38:24.536 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:38:24.536 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:38:13.773413 
+03:38:24.536 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:38:24.536 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:38:24.536 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:38:24.537 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:38:24.537 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:38:24.537 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:38:24.537 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:38:24.537 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:38:24.538 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:38:24.538 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:38:24.538 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:38:24.538 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:38:24.538 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 4% complete
+03:38:24.538 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 9% complete
+03:38:24.539 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 14% complete
+03:38:24.539 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 19% complete
+03:38:24.539 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 23% complete
+03:38:24.539 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 28% complete
+03:39:17.498 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 3210949 -crossover 'fixed_onepoint' -crossover_probability '0.75' -max_tree_depth '15' -max_tree_nodes '1000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '2' -no_crossover_invalids 'False' -selection 'tournament' -tournament_size '2'  
+03:39:17.499 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 15 lines of output we saw were:
+03:39:17.499 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:39:17.499 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:39:07.566461 
+03:39:17.499 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:39:17.499 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:39:17.499 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:17.499 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:39:17.499 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:17.500 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:39:17.500 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:17.500 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:39:17.500 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:17.500 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:39:17.501 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:17.501 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:39:17.501 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 4% complete
+03:39:43.734 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 14966462 -crossover 'fixed_twopoint' -crossover_probability '0.6210552798709494' -max_tree_depth '38' -max_tree_nodes '74' -mutate_duplicates 'True' -mutation 'int_flip_per_codon' -mutation_events '9' -no_crossover_invalids 'True' -no_mutation_invalids 'False' -selection 'truncation' -selection_proportion '0.887349007645771' -within_used 'True'  
+03:39:43.735 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:39:43.735 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:39:43.735 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:39:34.485376 
+03:39:43.735 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:39:43.735 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:39:43.736 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:43.736 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:39:43.736 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:43.737 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:39:43.737 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:43.737 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:39:43.737 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:43.737 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:39:43.738 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:39:43.738 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:40:11.383 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 3210949 -crossover 'subtree' -crossover_probability '0.18578659421541366' -max_tree_depth '79' -max_tree_nodes '66' -mutate_duplicates 'False' -mutation 'int_flip_per_ind' -mutation_events '8' -no_mutation_invalids 'False' -selection 'tournament' -tournament_size '14'  
+03:40:11.384 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 15 lines of output we saw were:
+03:40:11.384 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:40:11.384 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:40:01.076230 
+03:40:11.385 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:40:11.385 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:40:11.385 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:11.385 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:40:11.385 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:11.385 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:40:11.385 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:11.386 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:40:11.386 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:11.386 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:40:11.386 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:11.386 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:40:11.386 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 4% complete
+03:40:40.512 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 13624930 -crossover 'variable_twopoint' -crossover_probability '0.3311119109153425' -max_tree_depth '90' -max_tree_nodes '112' -mutate_duplicates 'False' -mutation 'int_flip_per_codon' -mutation_events '4' -no_crossover_invalids 'True' -no_mutation_invalids 'True' -selection 'tournament' -tournament_size '7' -within_used 'True'  
+03:40:40.512 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:40:40.513 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:40:40.513 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:40:31.115365 
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:40.514 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:40:40.515 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:40:40.515 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:50:07.338 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 5793249 -crossover 'subtree' -crossover_probability '0.8974804078925613' -max_tree_depth '71' -max_tree_nodes '625' -mutate_duplicates 'False' -mutation 'subtree' -mutation_events '1' -selection 'truncation' -selection_proportion '0.24026969665338377'  
+03:50:07.339 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:50:07.339 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:50:07.339 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:40:54.090664 
+03:50:07.339 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:50:07.339 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:50:07.339 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:07.340 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:50:07.340 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:07.340 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:50:07.340 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:07.340 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:50:07.341 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:07.341 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:50:07.341 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:07.341 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:50:29.936 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 5793249 -crossover 'subtree' -crossover_probability '0.11089365198169583' -max_tree_depth '16' -max_tree_nodes '784' -mutate_duplicates 'True' -mutation 'int_flip_per_ind' -mutation_events '6' -no_mutation_invalids 'False' -selection 'tournament' -tournament_size '13'  
+03:50:29.937 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 15 lines of output we saw were:
+03:50:29.937 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:50:29.937 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:50:20.835060 
+03:50:29.937 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:50:29.937 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:50:29.938 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:29.938 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:50:29.938 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:29.938 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:50:29.938 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:29.938 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:50:29.938 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:29.939 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:50:29.939 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:50:29.939 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:50:29.939 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 4% complete
+03:59:02.569 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 10374912 -crossover 'subtree' -crossover_probability '0.24856667241967917' -max_tree_depth '86' -max_tree_nodes '999' -mutate_duplicates 'False' -mutation 'subtree' -mutation_events '1' -selection 'tournament' -tournament_size '4'  
+03:59:02.569 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+03:59:02.569 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:59:02.570 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:50:44.839813 
+03:59:02.570 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:59:02.570 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:59:02.571 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:02.571 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:59:02.571 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:02.572 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:59:02.591 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:02.591 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:59:02.591 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:02.591 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:59:02.591 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:02.592 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:59:26.454 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 3224644 -crossover 'fixed_onepoint' -crossover_probability '0.6617635722899082' -max_tree_depth '49' -max_tree_nodes '130' -mutate_duplicates 'False' -mutation 'int_flip_per_ind' -mutation_events '2' -no_crossover_invalids 'False' -no_mutation_invalids 'False' -selection 'truncation' -selection_proportion '0.5066164589300914' -within_used 'True'  
+03:59:26.454 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 15 lines of output we saw were:
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:59:17.379330 
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:59:26.455 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:26.456 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:59:26.456 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:26.456 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:59:26.456 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:26.456 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:59:26.456 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 4% complete
+03:59:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 5720238 -crossover 'variable_twopoint' -crossover_probability '0.75' -max_tree_depth '15' -max_tree_nodes '1000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '1' -no_crossover_invalids 'False' -selection 'tournament' -tournament_size '2'  
+03:59:56.811 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 20 lines of output we saw were:
+03:59:56.812 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:59:56.812 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 03:59:47.178397 
+03:59:56.812 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+03:59:56.812 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+03:59:56.812 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:56.812 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+03:59:56.813 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:56.813 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+03:59:56.813 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:56.813 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+03:59:56.813 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:56.813 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+03:59:56.813 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+03:59:56.814 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+03:59:56.814 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 4% complete
+03:59:56.814 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 9% complete
+03:59:56.814 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 14% complete
+03:59:56.814 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 19% complete
+03:59:56.814 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 23% complete
+03:59:56.814 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 28% complete
+04:00:20.253 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 7023148 -crossover 'fixed_onepoint' -crossover_probability '0.16996881380769918' -max_tree_depth '14' -max_tree_nodes '671' -mutate_duplicates 'False' -mutation 'subtree' -mutation_events '5' -no_crossover_invalids 'True' -selection 'tournament' -tournament_size '4'  
+04:00:20.254 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+04:00:20.254 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+04:00:20.254 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 04:00:10.676206 
+04:00:20.254 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+04:00:20.255 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+04:00:20.255 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+04:00:20.255 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+04:00:20.255 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+04:00:20.255 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+04:00:20.256 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+04:00:20.256 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+04:00:20.256 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+04:00:20.256 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+04:00:20.256 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+04:00:20.256 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+05:46:29.679 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 15827795 -crossover 'variable_onepoint' -crossover_probability '0.6977592205461861' -max_tree_depth '63' -max_tree_nodes '467' -mutate_duplicates 'False' -mutation 'int_flip_per_codon' -mutation_events '4' -no_crossover_invalids 'True' -no_mutation_invalids 'True' -selection 'tournament' -tournament_size '16' -within_used 'False'  
+05:46:29.680 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+05:46:29.680 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+05:46:29.680 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 05:46:19.930939 
+05:46:29.680 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+05:46:29.680 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+05:46:29.680 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:46:29.680 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+05:46:29.681 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:46:29.681 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+05:46:29.681 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:46:29.681 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+05:46:29.681 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:46:29.681 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+05:46:29.681 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:46:29.681 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+05:49:16.532 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 3077357 -crossover 'fixed_twopoint' -crossover_probability '0.75' -max_tree_depth '15' -max_tree_nodes '1000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '1' -no_crossover_invalids 'False' -selection 'tournament' -tournament_size '2'  
+05:49:16.532 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 21 lines of output we saw were:
+05:49:16.532 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+05:49:16.532 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 05:49:06.165489 
+05:49:16.533 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+05:49:16.533 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+05:49:16.533 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:49:16.533 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+05:49:16.533 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:49:16.533 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+05:49:16.533 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:49:16.533 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 4% complete
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 9% complete
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 14% complete
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 19% complete
+05:49:16.534 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 23% complete
+05:49:16.535 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 28% complete
+05:49:16.535 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 33% complete
+05:50:28.022 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 3077357 -crossover 'fixed_onepoint' -crossover_probability '0.75' -max_tree_depth '15' -max_tree_nodes '1000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '1' -no_crossover_invalids 'False' -selection 'tournament' -tournament_size '2'  
+05:50:28.022 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 21 lines of output we saw were:
+05:50:28.022 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+05:50:28.023 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-14 05:50:15.982859 
+05:50:28.023 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+05:50:28.023 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+05:50:28.023 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:50:28.023 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+05:50:28.023 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:50:28.024 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+05:50:28.024 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:50:28.024 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+05:50:28.024 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:50:28.025 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+05:50:28.025 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+05:50:28.025 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+05:50:28.025 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 4% complete
+05:50:28.025 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 9% complete
+05:50:28.025 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 14% complete
+05:50:28.025 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 19% complete
+05:50:28.025 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 23% complete
+05:50:28.026 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 28% complete
+05:50:28.026 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 33% complete

@@ -1,0 +1,27 @@
+22:32:07.297 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  ./tune.py no_instance 0 600.0 2147483647 2398242 -crossover 'subtree' -crossover_probability '0.75' -max_tree_depth '90' -max_tree_nodes '1000000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '1' -selection 'tournament' -tournament_size '2'  
+22:32:07.332 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Message: Cannot run program "./tune.py" (in directory "C:\studia\magisterka\PonyGE2\src"): CreateProcess error=193, %1 is not a valid Win32 application
+22:32:07.343 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - A serious problem occured during target algorithm execution and we are aborting execution 
+ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.exceptions.TargetAlgorithmAbortException: Cannot run program "./tune.py" (in directory "C:\studia\magisterka\PonyGE2\src"): CreateProcess error=193, %1 is not a valid Win32 application
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun.call(CommandLineAlgorithmRun.java:674) ~[aeatk.jar:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun.call(CommandLineAlgorithmRun.java:60) ~[aeatk.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: Cannot run program "./tune.py" (in directory "C:\studia\magisterka\PonyGE2\src"): CreateProcess error=193, %1 is not a valid Win32 application
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:592) ~[na:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun.runProcess(CommandLineAlgorithmRun.java:822) ~[aeatk.jar:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun.call(CommandLineAlgorithmRun.java:415) ~[aeatk.jar:na]
+	... 5 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:478) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:154) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107) ~[na:na]
+	... 9 common frames omitted
+22:32:07.343 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - We tried to call the target algorithm wrapper, but this call failed.
+22:32:07.344 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - The problem is (most likely) somewhere in the wrapper or with the arguments to SMAC.
+22:32:07.344 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - The easiest way to debug this problem is to manually execute the call we tried and see why it did not return the correct result
+22:32:07.347 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - The required output of the wrapper is something like "Result for ParamILS: x,x,x,x,x".);

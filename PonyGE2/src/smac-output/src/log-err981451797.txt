@@ -1,0 +1,1 @@
+22:26:35.801 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Message: The instance file option --instances must be set

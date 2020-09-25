@@ -1,0 +1,132 @@
+23:28:32.282 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  Fatal Python error: Cannot recover from MemoryErrors while normalizing exceptions.
+23:28:32.284 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  Python runtime state: initialized
+23:28:32.285 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  
+23:28:32.285 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  Thread 0x000053d8 (most recent call first):
+23:28:32.286 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 305 in _recv_bytes
+23:28:32.286 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 250 in recv
+23:28:32.287 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\pool.py", line 576 in _handle_results
+23:28:32.287 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 870 in run
+23:28:32.288 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 932 in _bootstrap_inner
+23:28:32.288 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 890 in _bootstrap
+23:28:32.288 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  
+23:28:32.288 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  Thread 0x000000bc (most recent call first):
+23:28:32.289 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\pool.py", line 528 in _handle_tasks
+23:28:32.289 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 870 in run
+23:28:32.289 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 932 in _bootstrap_inner
+23:28:32.289 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 890 in _bootstrap
+23:28:32.290 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  
+23:28:32.290 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  Thread 0x00003f80 (most recent call first):
+23:28:32.290 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 811 in _exhaustive_wait
+23:28:32.291 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 879 in wait
+23:28:32.291 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\pool.py", line 499 in _wait_for_updates
+23:28:32.291 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\pool.py", line 519 in _handle_workers
+23:28:32.292 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 870 in run
+23:28:32.292 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 932 in _bootstrap_inner
+23:28:32.292 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\Users\SG0303583\AppData\Local\Programs\Python\Python38-32\lib\threading.py", line 890 in _bootstrap
+23:28:32.292 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  
+23:28:32.293 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]  Current thread 0x00003754 (most recent call first):
+23:28:32.293 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.293 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.294 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.294 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.294 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.295 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.295 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.295 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.296 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.296 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.296 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.297 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.297 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.297 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.298 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.298 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.298 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.299 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.299 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.300 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.303 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.303 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.304 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.304 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.304 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.305 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.305 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.305 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.305 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.306 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.306 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.307 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.307 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.307 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.307 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.308 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.308 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.308 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.309 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.309 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.309 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.310 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.310 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.310 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.311 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.311 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.311 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.312 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.312 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.312 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.313 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.313 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.313 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.313 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.314 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.314 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.315 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.315 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.316 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.316 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.316 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.317 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.317 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.317 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.318 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.318 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.318 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.319 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\representation\derivation.py", line 77 in generate_tree
+23:28:32.319 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\operators\mutation.py", line 166 in subtree_mutate
+23:28:32.319 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\operators\mutation.py", line 180 in subtree
+23:28:32.320 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\operators\mutation.py", line 31 in mutation
+23:28:32.320 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\algorithm\step.py", line 28 in step
+23:28:32.320 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "C:\studia\magisterka\PonyGE2\src\algorithm\search_loop.py", line 37 in search_loop
+23:28:32.320 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "tune.py", line 24 in tune
+23:28:32.320 [CLI TAE (STDERR Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - [PROCESS-ERR]    File "tune.py", line 57 in <module>
+23:28:32.785 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The following algorithm call failed: cd "C:\studia\magisterka\PonyGE2\src" &  python tune.py no_instance 0 600.0 2147483647 5041174 -crossover 'subtree' -crossover_probability '0.75' -max_tree_depth '90' -max_tree_nodes '1000000' -mutate_duplicates 'True' -mutation 'subtree' -mutation_events '1' -selection 'tournament' -tournament_size '2'  
+23:28:32.788 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - The last 14 lines of output we saw were:
+23:28:32.789 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:28:32.790 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Start:	 2020-09-13 23:20:05.274800 
+23:28:32.791 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > 
+23:28:32.792 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <process>
+23:28:32.793 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:28:32.816 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <task>
+23:28:32.817 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:28:32.817 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <parallel>
+23:28:32.817 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:28:32.817 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <exclusive>
+23:28:32.818 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:28:32.818 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Warning: Grammar contains unit production for production rule <loop>
+23:28:32.818 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - >          Unit productions consume GE codons.
+23:28:32.818 [CLI TAE (Master Thread - #0)] ERROR c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - > Evolution: 0% complete
+23:28:32.858 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Message:  Wrapper did not output anything that matched the expected output ("Result of algorithm run:..."). Please try executing the wrapper directly
+23:28:32.863 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - A serious problem occured during target algorithm execution and we are aborting execution 
+ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.exceptions.TargetAlgorithmAbortException:  Wrapper did not output anything that matched the expected output ("Result of algorithm run:..."). Please try executing the wrapper directly
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.decorators.safety.AbortOnFirstRunCrashTargetAlgorithmEvaluator.validate(AbortOnFirstRunCrashTargetAlgorithmEvaluator.java:55) ~[aeatk.jar:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.decorators.safety.AbortOnFirstRunCrashTargetAlgorithmEvaluator.access$000(AbortOnFirstRunCrashTargetAlgorithmEvaluator.java:23) ~[aeatk.jar:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.decorators.safety.AbortOnFirstRunCrashTargetAlgorithmEvaluator$1.onSuccess(AbortOnFirstRunCrashTargetAlgorithmEvaluator.java:80) ~[aeatk.jar:na]
+	at ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineTargetAlgorithmEvaluator$1$1.run(CommandLineTargetAlgorithmEvaluator.java:164) ~[aeatk.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+23:28:32.864 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - We tried to call the target algorithm wrapper, but this call failed.
+23:28:32.864 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - The problem is (most likely) somewhere in the wrapper or with the arguments to SMAC.
+23:28:32.864 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - The easiest way to debug this problem is to manually execute the call we tried and see why it did not return the correct result
+23:28:32.864 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - The required output of the wrapper is something like "Result for ParamILS: x,x,x,x,x".);

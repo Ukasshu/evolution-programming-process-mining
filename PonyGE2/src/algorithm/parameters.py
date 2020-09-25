@@ -13,8 +13,8 @@ params = {
         'STEP': 'step',
 
         # Evolutionary Parameters
-        'POPULATION_SIZE': 100,
-        'GENERATIONS': 100,
+        'POPULATION_SIZE': 50,
+        'GENERATIONS': 200,
         'HILL_CLIMBING_HISTORY': 1000,
         'SCHC_COUNT_METHOD': "count_all",
 
@@ -50,9 +50,9 @@ params = {
         'TARGET': "ponyge_rocks",
 
         # Set max sizes of individuals
-        'MAX_TREE_DEPTH': 90,  # SET TO 90 DUE TO PYTHON EVAL() STACK LIMIT.
+        'MAX_TREE_DEPTH': 40,  # SET TO 90 DUE TO PYTHON EVAL() STACK LIMIT.
                                # INCREASE AT YOUR OWN RISK.
-        'MAX_TREE_NODES': None,
+        'MAX_TREE_NODES': 1000,
         'CODON_SIZE': 100000,
         'MAX_GENOME_LENGTH': None,
         'MAX_WRAPS': 0,

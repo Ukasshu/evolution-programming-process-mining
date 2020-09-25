@@ -390,3 +390,71 @@ def print_final_moo_stats():
     for ind in trackers.best_ever:
         print(" ", ind)
     print_generation_stats()
+
+
+def __get_stats__(individuals, end):
+    
+    # Get best individual.
+    best = max(individuals)
+
+    if not trackers.best_ever or best > trackers.best_ever:
+        # Save best individual in trackers.best_ever.
+        trackers.best_ever = best
+
+    if end or params['VERBOSE'] or not params['DEBUG']:
+        # Update all stats.
+        update_stats(individuals, end)
+
+    # Save fitness plot information
+    if params['SAVE_PLOTS'] and not params['DEBUG']:
+        if not end:
+            trackers.best_fitness_list.append(trackers.best_ever.fitness)
+
+        if params['VERBOSE'] or end:
+            save_plot_from_data(trackers.best_fitness_list, "best_fitness")
+
+    # Print statistics
+    if params['VERBOSE'] and not end:
+        print_generation_stats()
+
+    elif not params['SILENT']:
+        # Print simple display output.
+        perc = stats['gen'] / (params['GENERATIONS']+1) * 100
+        stdout.write("Evolution: %d%% complete\r" % perc)
+        stdout.flush()
+
+    # Generate test fitness on regression problems
+    if hasattr(params['FITNESS_FUNCTION'], "training_test") and end:
+
+        # Save training fitness.
+        trackers.best_ever.training_fitness = copy(trackers.best_ever.fitness)
+
+        # Evaluate test fitness.
+        trackers.best_ever.test_fitness = params['FITNESS_FUNCTION'](
+            trackers.best_ever, dist='test')
+
+        # Set main fitness as training fitness.
+        trackers.best_ever.fitness = trackers.best_ever.training_fitness
+
+    # Save stats to list.
+    if params['VERBOSE'] or (not params['DEBUG'] and not end):
+        trackers.stats_list.append(copy(stats))
+
+    # Save stats to file.
+    if not params['DEBUG']:
+
+        if stats['gen'] == 0:
+            save_stats_headers(stats)
+
+        save_stats_to_file(stats, end)
+
+        if params['SAVE_ALL']:
+            save_best_ind_to_file(stats, trackers.best_ever, end, stats['gen'])
+
+        elif params['VERBOSE'] or end:
+            save_best_ind_to_file(stats, trackers.best_ever, end)
+
+    # if end and not params['SILENT']:
+        # print_final_stats()
+
+    return stats
