@@ -190,7 +190,7 @@ params = {
 
         # CUSTOM
         # PROCESS MINING
-        'TRACES_XES_FILE': "teleclaims.xes"
+        'TRACES_XES_FILE': "repair-example.xes"
 
 }
 

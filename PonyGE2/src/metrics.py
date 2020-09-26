@@ -5,11 +5,12 @@ from fitness.bpmn.xes_reader import XESReader
 reader = XESReader("repair-example.xes")
 reader.read_xes()
 
-str_to_cmp = "start par task(4) task(0) next task(1) back exsplit loop loop ex task(6) next task(3) next task(5) back back back loop loop ex loop loop ex task(8) next task(3) back back back next task(11) next task(10) back back back exsplit exsplit loop loop ex task(6) next task(3) back back back exsplit task(7) loop loop ex task(6) next task(3) back back back end next task(8) end next end back next task(2) end next task(8) end back next task(8) end next task(8) end back next end back"
+str_to_cmp = "start task(4) task(1) task(0) par task(3) next do ex task(8) task(7) next task(6) task(5) back task(11) task(10) repeat_after task(9) back back task(2) end"
 
 compiler = Compiler(" ", reader)
 compiler.compile(str_to_cmp)
 compiler.simplify_graph()
+
 
 fit = bpmn_fitness()
 

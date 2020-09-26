@@ -143,9 +143,16 @@ class bpmn_fitness(base_ff):
                     new_path.extend(list(map(lambda h: (next_step[0], h), have_it_next)))
                     self.check_trace(new_curr, curr_trace, new_path, simple_graph, compiler, max_trace, markings, flwd_trcs)
             elif type_of_next == "end":
-                markings.add(tuple(curr_trace))
-                self.count_max_traces_for_path_end(max_trace, curr_trace, path, flwd_trcs)
-                pass
+                if len(curr) == 1:
+                    markings.add(tuple(curr_trace))
+                    self.count_max_traces_for_path_end(max_trace, curr_trace, path, flwd_trcs)
+                    pass
+                else:
+                    new_curr = copy.copy(curr)
+                    new_curr.remove(next_step[1])
+                    new_path = copy.copy(path)
+                    new_path.append(next_step)
+                    self.check_trace(new_curr, curr_trace, new_path, simple_graph, compiler, max_trace, markings, flwd_trcs)
             
         except:
             traceback.print_exc()
