@@ -16,8 +16,8 @@ class Compiler:
     def compile(self, string_to_compile):
         self.par_tasks = set()
         self.loop_tasks = set()
-        self.program = [] 
-                
+        self.program = []
+
         tokens = string_to_compile.split(self.delimiter)
 
         gateway_count = 0  # OK

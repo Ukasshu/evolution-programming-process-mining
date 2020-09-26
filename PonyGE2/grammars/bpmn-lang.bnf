@@ -1,6 +1,6 @@
 <process> ::= start <endableFlow>
 
-<numOfTasks> ::= GE_RANGE:12
+<numOfTasks> ::= GE_RANGE:21
 
 <numOfGateways> ::= GE_RANGE:20
 
